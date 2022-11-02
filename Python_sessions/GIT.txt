@@ -1,0 +1,222 @@
+Git and Git hub :
+---------------
+Git is version control system in local machine and Git hub is remot repository.
+
+git init  ------------>git intilization
+git add ---------------> to add code to stageing area 
+git status ------------->check the status of git
+git commit -m "message" ------->code moved local repository
+git push ----------------------> code mved to remote repo
+git clone ---------------------> remote repo to local repo 
+
+eg:
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ pwd
+/c/Users/jagan/OneDrive/Desktop/Python_sessions_git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ git init
+Initialized empty Git repository in C:/Users/jagan/OneDrive/Desktop/Python_sessions_git/.git/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Repo_1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~
+$ pwd
+/c/Users/jagan
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~
+$ cd OneDrive/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive
+$ cd Desktop/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$ cd python
+Python All Files/                Python_Batch_4/                  python sessions2/
+Python Selenium Online Training/ Python_sessions/                 pythonbatch2/
+Python2b/                        Python_sessions_git/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$ cd Python_sessions_git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ ls
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ ls
+Repo_1/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ pwd
+/c/Users/jagan/OneDrive/Desktop/Python_sessions_git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ cd Repo_1
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git/Repo_1
+$ ls
+test1.txt  test2.txt
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git/Repo_1
+$ cd ..
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ pwd
+/c/Users/jagan/OneDrive/Desktop/Python_sessions_git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git
+$ git init
+Initialized empty Git repository in C:/Users/jagan/OneDrive/Desktop/Python_sessions_git/.git/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Repo_1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git add .
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Repo_1/test1.txt
+        new file:   Repo_1/test2.txt
+
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git commit -m "version_1"
+[master (root-commit) d233a8f] version_1
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Repo_1/test1.txt
+ create mode 100644 Repo_1/test2.txt
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git remote add origin https://github.com/mohangavvala/Repo_1_pythonsesions.git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mohangavvala/Repo_1_pythonsesions.git'
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (master)
+$ git branch -M main
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ git remote add origin https://github.com/mohangavvala/Repo_1_pythonsesions.git
+error: remote origin already exists.
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ ^C
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 270 bytes | 135.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohangavvala/Repo_1_pythonsesions.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ ^C
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ ^C
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ pwd
+/c/Users/jagan/OneDrive/Desktop/Python_sessions_git
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Python_sessions_git (main)
+$ cd ..
+
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$ pwd
+/c/Users/jagan/OneDrive/Desktop
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$ mkdir Getback_local
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop
+$ cd Getback_local/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local
+$ git clone https://github.com/mohangavvala/Repo_1_pythonsesions.git
+Cloning into 'Repo_1_pythonsesions'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local
+$ ls
+Repo_1_pythonsesions/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local
+$ pwd
+/c/Users/jagan/OneDrive/Desktop/Getback_local
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local
+$ cd Repo_1_pythonsesions/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local/Repo_1_pythonsesions (main)
+$ ls
+Repo_1/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local/Repo_1_pythonsesions (main)
+$ cd Repo_1/
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local/Repo_1_pythonsesions/Repo_1 (main)
+$ ls
+test1.txt  test2.txt
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local/Repo_1_pythonsesions/Repo_1 (main)
+$ ^C
+
+jagan@DESKTOP-VDCL0DV MINGW64 ~/OneDrive/Desktop/Getback_local/Repo_1_pythonsesions/Repo_1 (main)
+$

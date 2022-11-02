@@ -1,0 +1,8904 @@
+Python Programing:
+•	Python is a General purpose High level programing Language
+•	Guido Van Rosaam  was developed the python programing in 1989, but it officially realised in   1991
+Why Python Programing Is Popular:
+1.	It is very simple and easy
+Example:
+if "E" in "Easy":
+    print("Yes")
+else:
+    print ("No")
+Output:
+Yes
+Example:
+if "Z" in "Easy":
+    print("Yes")
+else:
+    print ("No")
+Output:
+No
+2.	Python programing used in multiple types applications.
+•	Web applications,
+•	Data Science,
+•	AI,
+•	Testing,
+•	Automation,
+•	Gaming,
+•	Ecommerce ....e.t.c
+
+3.	Python having concise code  
+Example:   In c programing to print hello world 
+	#include <stdio.h>
+int main() {
+  	 // printf() displays the string inside quotation
+  	 printf("Hello, World!");
+   	}
+Output:  Hello,World!
+Example:   In python programing to print hello world 
+print("Hello, World!")
+   	 Output:  Hello,World!
+4.	Python is used in Data Analysis.
+
+
+Python features:
+1.	Python supports functional and procedure oriented features. These features taken from C programing.
+2.	Python supports Objective Oriented Programing. These features taken from C++.
+3.	Python supports scripting feature. These features taken from Shell Script.
+4.	Python supports modular programing feature. These feature taken from Modula3.
+
+Python is platform independent:
+•	We can write python code in any operating system and to run any other operating system 
+Without modification of code.
+
+Python Version:
+The current version of the python is 3.10.6. Up to python 2 versions developed based on enhancement of previous versions of python. But Python 3 developed again from scratch, Python doesn't have backward compatibility it means whatever code we written in python 2 which is not executed in python3 similarly.Python3 code is not executed in python2.
+How to download and install python:
+1.	Go to website https://www.python.org/
+2.	Click on downloads and click on python windows
+
+How to open it:
+1.	Go to windows start 
+2.	Type python it showing results like IDLE (python 3.10)
+3.	Click open   then python IDLE will be opened.
+What is IDLE?
+•	IDLE stands for Integrated Development Learning Environment.
+•	When your beginner to the python if you want to practice some basic examples then go 
+
+For IDLE.
+Example:
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> a
+10
+>>> b
+20
+>>> c
+30
+
+Example:
+>>> x=100
+>>> y=2
+>>> z=x/y
+>>> x
+100
+>>> y
+2
+>>> z
+50.0
+•	Python IDLE is working based on REPL tool
+•	REPL stands for Read Evaluate Print Loop
+•	It works Read------->Evaluate-------->Print then again it expecting new data i.e nothing but Loop
+
+How we can excute python code:
+By Using Python IDLE:
+1.	Open python IDLE
+2.	Go to file and click on New file
+3.	Write the code inside the file
+4.	Save the file with any name but extension with .py  eg: abc.py
+5.	Go to Run and click on Run module.
+
+Example:
+tes.py
+a=10
+b=20
+c=a+b
+print(a+b)
+print("Hello")
+
+Output:  
+30
+Hello
+
+Run python code using Text Edtors:
+Example:
+test.py
+a=10
+b=20
+c=a+b
+print(a+b)
+print("Hello")
+output:
+C:\Users\jagan>cd OneDrive
+
+C:\Users\jagan\OneDrive>cd Desktop
+
+C:\Users\jagan\OneDrive\Desktop>cd Python_Sessions
+
+C:\Users\jagan\OneDrive\Desktop\Python_Sessions>python  test.py
+30
+Hello
+
+Run python code using IDEs:
+IDE standsfor Integrated Development Environment.
+There are somany IDEs are there
+1.PyCharm
+2.Atom
+3.Jupiter Not book
+4.Spyder
+e.t.c
+
+
+Identifiers:
+•	Identifier is a variable name or function name or class name.
+Examples:
+a=10
+y=100
+
+def  test():
+----------
+-----------
+
+class  Student:
+----------
+--------
+------------
+
+Rules to define identifiers:
+
+1.	Allowed charcters to define identifiers are A to Z,a to z, 0 to 9 and only one special symbol i.e _ (under score.)
+Example: 
+total=100 ----->valid
+toTaL=200 ------>valid
+total123=5000 ------>valid
+total_123=10000 ------>valid
+total$=2000 --------------->Invalid
+2.	Identifier should not start with digit.
+Example:
+total123=1000 --------------->valid
+123total=1000 --------------->Invalid
+3.	Python is case sensitive programing language.
+Example:
+abc=1000
+ABC=2000
+print(abc)
+print(ABC)
+
+output:
+1000
+2000
+
+4.	There no limit to length of identifier.
+
+Example
+a=10
+ab=200
+abc=500
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=1000
+5.	Reserved words should not used as identifier.
+
+Example
+		for=10  invalid
+		if=1000   invalid
+
+
+
+6.	Diffrent types of variables are there
+
+Example
+		x=10   	  ---------->Normal variable
+		_x=20 	-------------->Protected variable
+		__x=200  ------------->Private variable
+		__x__=30  ------------>magical methods 
+
+
+
+Reserved words or Key words in python:
+•	Python having only 33 reserved words.
+
+Example:
+ test.py
+import keyword
+l=keyword.kwlist 
+print(l)
+print(len(l))
+
+Output:
+['False', 'None', 'True', 'and', 'as', 'assert', 
+'break', 'class', 'continue', 'def', 'del', 
+'elif', 'else', 'except', 'finally', 'for', 
+'from', 'global', 'if', 'import', 'in', 'is', 
+'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+ 'return', 'try', 'while', 'with', 'yield']
+33
+
+
+Note: In python Everything treated as Object.
+
+Three important functions:
+1. type()
+•	type() is inbuilt function of python by using type() to know data type stored in a variable.
+
+Example:
+a=10
+print(a)
+print(type(a))
+
+b=10.5
+print(b)
+print(type(b))
+
+c="Hello"
+print(c)
+print(type(c))
+
+Output:
+10
+<class 'int'>
+10.5
+<class 'float'>
+Hello
+<class 'str'>
+
+
+
+
+
+
+
+2. id():
+•	id() is inbuilt function of python by using id () to know address of object
+ 
+Example:
+a=10
+print(a)
+print(id(a))
+b=20
+print(b)
+print(id(b))
+
+Output:
+10
+1915013072
+20
+1915013392
+
+
+
+
+
+
+
+
+3. print():
+•	print() is inbuilt function of python by using print() to print the data
+
+Example:
+a=10
+print(a)
+b="Hello"
+print(b)
+
+Output:
+10
+Hello
+
+
+The following are data types in python.
+1.	int
+2.	float
+3.	complex
+4.	bool
+5.	string
+6.	list
+7.	tuple
+8.	set
+9.	dict
+10.	range
+
+
+
+
+
+
+
+
+
+1. Integer Data Type:
+•	If you want to mention any integer value we can go for integer data type
+
+Example:
+a=10
+print(a)
+print(type(a))
+print(id(a))
+
+Output:
+10
+<class 'int'>
+1915013072
+
+•	We can represent integer data type in following format
+
+1.	a=10 				--------------->Decimal format
+2.	a=0b1010   or a=0B1010	--------------->Binary format
+Eg:
+		a=0b1010
+		print(a)
+		b=0B1111
+		print(b)
+		output:
+		10
+		15
+3.	b=0o765  or  b=0O765   		------------------>Octal format
+Eg: 
+		a=0o765
+		print(a)
+		b=0O716
+		print(b)
+
+		output:
+		501
+		462
+
+
+
+4.	c=0xABCD   or   c=0XABCD 	----------------->Hexa decimal format
+Eg:
+		a=0xABCD
+		print(a)
+		b=0Xabcd
+		print(b)
+
+		output:
+		43981
+		43981
+Note:  But internally all representation treated as Decimal representation only.
+
+Base conversions:
+•	To convert one base (one format) to another base (another format) is known as Base conversion. 
+•	The following are Base conversion functions.
+1.	bin() ------------->Given value is converted into Binary
+2.	oct() --------------->Given value is converted into Octal
+3.	hex() --------------->Given value is converted into hex format
+Example:
+a=10
+print(a)
+print(bin(a))
+b=0b1010
+print(b)
+print(oct(b))
+print(hex(b))
+
+Output:
+10
+0b1010
+10
+0o12
+0xa
+
+
+2. Float Data Type:
+•	If you want mention any float point values we can go for float data type
+
+Example
+a=12.5
+print(a)
+print(type(a))
+
+Output
+
+12.5
+<class 'float'>
+
+
+•	To represent exponential numbers   by using float data type.
+•	Example 1.2*10^4   we can represent this number by using float data type.
+
+Example
+a=1.2e4
+print(a)
+print(type(a))
+
+Output:
+12000.0
+<class 'float'>
+
+
+3. Complex data type:
+•	If you want to mention real and imaginary numbers we can go for complex data type
+Syntax:
+	a+bj
+
+Example:
+a=20+40j
+print(a)
+print(type(a))
+Output:
+(20+40j)
+<class 'complex'>
+
+4. Boolean data type:
+•	True and False are comes under Boolean data type
+	True internally treated as 1
+	False internally treated as 0
+
+Example:
+a=True
+b=False
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+Output:
+True
+<class 'bool'>
+False
+<class 'bool'>
+
+
+Note:
+•	Int, Float, Complex and Boolean data types are comes under non iterations   objects 
+
+
+5.String data type:
+-------------------
+ Any number of sequnce of charters enclosed with single or double or triple quotes is known as
+ string.
+ 
+ Eg:
+ s1='Hello'
+s2="Hello"
+s3='''Hello'''
+s4="""Hello"""
+s4='H'
+
+print(s1)
+print(s2)
+print(s3)
+print(s4)
+
+
+output:
+Hello
+Hello
+Hello
+H
+
+eg:
+s1="""Hello
+    How 
+    are 
+    you"""
+print(s1)
+
+output:
+Hello
+    How
+    are
+    you
+Eg:
+s1='''Hello
+    How 
+    are 
+    you'''
+print(s1)
+
+output:
+Hello
+    How
+    are
+    you
+
+Note : To define multi line strings compulsory use triple quotes.
+
+Indexing:
+--------
+To access charcters in give string we can go for indexing
+Python having two types of indexing
+
+1.Postive index:
+----------------
+It starts from left to right   and starting index value is 0 and end index values is
+length of string -1 
+
+2.Negative index :
+---------------
+It starts from right to left and starting index value is -1 and end index value is - of
+length of string 
+
+Eg:
+s1="ABCDEFGH"
+print(len(s1))
+print(s1[0])
+print(s1[5])
+print(s1[7])
+print(s1[len(s1)-1])
+print(s1[-1])
+print(s1[-5])
+print(s1[-8])
+print(s1[-len(s1)])
+
+output:
+8
+A
+F
+H
+H
+H
+D
+A
+A
+
+Eg:
+s1="ABCDEFGH"
+print(s1[100])
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print(s1[100])
+IndexError: string index out of range
+
+Note: if string value not in range of string index operator raises the indexError
+
+Slice operator:
+---------------
+
+By using slice operator we can access group of charcters from given string
+
+Syntax:
+------
+ s[startindex:endindex]
+ 
+Eg:
+	s[4:8]
+	start index value is 4 and end index value is 8
+	from start index 4 to end index value 8 -1
+	4 to 8-1
+	4 to 7
+Eg:
+s="ABCDEFGH"
+print(s[4:8])
+print(s[2:6])
+
+output:
+EFGH
+CDEF
+
+Eg:
+--
+s[:]
+Default start index value is 0
+Default end index value is last charcter index  (len(string)-1)
+
+Eg:
+s="ABCDEFGH"
+print(s[:])
+
+output:
+ABCDEFGH
+
+Eg:
+S[2:]
+
+s="ABCDEFGH"
+print(s[2:])
+
+output:
+CDEFGH
+
+Eg:
+s="ABCDEFGH"
+print(s[:5])
+output:
+ABCDE
+
+
+Eg:
+s="ABCDEFGH"
+print(s[2:200])
+
+output:
+CDEFGH
+
+Note : Slice oper never raise any error 
++ and * operator apply on strings:
+•	‘+’   Operator used for to concatenate the strings. 
+•	‘*’   Operator used for to repeat the strings specified number of times.
+Example:
+s1=10
+s2=20
+print(s1+s2)
+s3="Hello"
+s4="How are you"
+print(s3+s4)
+output:
+30
+HelloHow are you
+Example:
+s1=10
+s2=2
+print(s1*s2)
+s3="Hello"
+s4=4
+print(s3*s4)
+Output:
+20
+HelloHelloHelloHello
+Note: Integer, Float, Bool, Complex and String these data type are known as Fundamental data types.
+Type casting or Type cohesion:
+•	The process of converting one data type to another data type is known as Type Casting.
+
+•	There are 5 type casting functions:
+
+
+1.int()
+2.float()
+3.bool()
+4.complex()
+5.str()
+
+
+
+
+1.int():
+•	Int()  converts any other data type to integer data type.
+Example:
+a=9.2
+print(a)
+print(type(a))
+print(int(a))
+print(type(int(a)))
+
+Output:
+9.2
+<class 'float'>
+9
+<class 'int'>
+
+Note: float data type to integer data type conversion is possible.
+Example:
+a=True
+print(a)
+print(type(a))
+print(int(a))
+print(type(int(a)))
+output:
+
+True
+<class 'bool'>
+1
+<class 'int'>
+
+Example:
+a=False
+print(a)
+print(type(a))
+print(int(a))
+print(type(int(a)))
+Output:
+False
+<class 'bool'>
+0
+<class 'int'>
+
+
+
+Note: bool data type to integer data type conversion is possible.
+
+
+
+Example:
+
+a=20+30j
+print(a)
+print(type(a))
+print(int(a))
+
+output:
+(20+30j)
+<class 'complex'>
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(int(a))
+TypeError: can't convert complex to int
+
+
+Note: complex data type to integer data type conversion is not possible.
+Example 
+a="Hello"
+print(a)
+print(type(a))
+print(int(a))
+
+Output:
+Hello
+<class 'str'>
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(int(a))
+ValueError: invalid literal for int() with base 10: 'Hello'
+
+Example 
+a='1000'
+print(a)
+print(type(a))
+print(int(a))
+print(type(int(a)))
+Output:
+1000
+<class 'str'>
+1000
+<class 'int'>
+
+Note:
+	String data type integer data type is possible but string contains only numeric characters then only given string converted into integer. If string contains non numeric data is not possible to convert string to integer.
+
+2.float():
+•	float() which converts any other data type to float data type
+Example:
+a=20
+print(a)
+print(type(a))
+print(float(a))
+print(type(float(a)))
+Output:
+20
+<class 'int'>
+20.0
+<class 'float'>
+
+Note: integer to float conversion is possible
+Example:
+a=True
+print(a)
+print(type(a))
+print(float(a))
+print(type(float(a)))
+
+Output:
+True
+<class 'bool'>
+1.0
+<class 'float'>
+
+Example:
+a=False
+print(a)
+print(type(a))
+print(float(a))
+print(type(float(a)))
+
+Output:
+False
+<class 'bool'>
+0.0
+<class 'float'>
+
+
+Note: bool data to float conversion is possible
+
+
+
+Example:
+
+a=10+20j
+print(a)
+print(type(a))
+print(float(a))
+
+Output:
+
+(10+20j)
+<class 'complex'>
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(float(a))
+TypeError: can't convert complex to float
+
+Note: complex data to float conversion is not possible
+
+Example:
+a="Hello"
+print(a)
+print(type(a))
+print(float(a))
+Output:
+Hello
+<class 'str'>
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(float(a))
+ValueError: could not convert string to float: 'Hello'
+
+Example:
+a="1000"
+print(a)
+print(type(a))
+print(float(a))
+print(type(float(a)))
+
+Output:
+1000
+<class 'str'>
+1000.0
+<class 'float'>
+
+Note:
+	String data type float data type is possible but string contains only numeric characters then only given string converted into float. If string contains non numeric data is not possible to convert string to float.
+
+3.complex():
+•	complex() is convert any other data type to complex data type.
+Example:
+a=10+20j
+b=0+80j
+print(a)
+print(b)
+Output:
+(10+20j)
+80j
+
+
+
+Format 1:   complex(x)
+a=10
+print(a)
+print(type(a))
+print(complex(a))
+print(type(complex(a)))
+
+Output:
+10
+<class 'int'>
+(10+0j)
+<class 'complex'>
+
+Note: It is possible to convert integer to complex.
+Example:
+a=10.5
+print(a)
+print(type(a))
+print(complex(a))
+print(type(complex(a)))
+
+output:
+10.5
+<class 'float'>
+(10.5+0j)
+<class 'complex'>
+
+
+
+Note: It is possible to convert float to complex.
+
+Example:
+a=True
+print(a)
+print(type(a))
+print(complex(a))
+print(type(complex(a)))
+
+Output:
+True
+<class 'bool'>
+(1+0j)
+<class 'complex'>
+
+Example:
+
+a=False
+print(a)
+print(type(a))
+print(complex(a))
+print(type(complex(a)))
+
+output:
+False
+<class 'bool'>
+0j
+<class 'complex'>
+
+
+
+
+Note: It is possible to convert bool to complex .
+Example:
+a="ABCD"
+print(a)
+print(type(a))
+print(complex(a))
+
+Output:
+ABCD
+<class 'str'>
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(complex(a))
+ValueError: complex() arg is a malformed string
+
+Example:
+a="10100"
+print(a)
+print(type(a))
+print(complex(a))
+
+output:
+10100
+<class 'str'>
+(10100+0j)
+
+
+Note:  string to complex data conversion is possible but string contains only numeric data.  If string contains non numeric data it is not possible to convert string to complex
+ 
+ 
+ 
+Format 2:   complex(x,y)
+
+Example:
+a=10
+b=20
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(complex(a,b))
+print(type(complex(a,b)))
+
+Output:
+10
+<class 'int'>
+20
+<class 'int'>
+(10+20j)
+<class 'complex'>
+
+Example:
+a=10.5
+b=20.5
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(complex(a,b))
+print(type(complex(a,b)))
+
+
+Output:
+10.5
+<class 'float'>
+20.5
+<class 'float'>
+(10.5+20.5j)
+<class 'complex'>
+
+Example:
+a=True
+b=True
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(complex(a,b))
+print(type(complex(a,b)))
+
+Output:
+True
+<class 'bool'>
+True
+<class 'bool'>
+(1+1j)
+<class 'complex'>
+
+
+
+
+
+
+Example:
+a="Hello"
+b="hai"
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(complex(a,b))
+Output:
+Hello
+<class 'str'>
+hai
+<class 'str'>
+Traceback (most recent call last):
+  File "test.py", line 7, in <module>
+    print(complex(a,b))
+TypeError: complex() can't take second arg if first is a string
+
+
+
+Example:
+a="1234"
+b="200"
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(complex(a,b))
+
+
+
+Output:
+1234
+<class 'str'>
+200
+<class 'str'>
+Traceback (most recent call last):
+  File "test.py", line 7, in <module>
+    print(complex(a,b))
+TypeError: complex() can't take second arg if first is a string
+
+
+Note:  string to complex data type conversion is not possible with complex(x,y).
+
+4.bool():
+•	we can convert any data type to bool data is possible
+Example:
+a=10
+b=10.5
+c=10+20j
+d="hello"
+
+print(a)
+print(type(a))
+print(bool(a))
+print(type(bool(a)))
+
+print(b)
+print(type(b))
+print(bool(b))
+print(type(bool(b)))
+
+print(c)
+print(type(c))
+print(bool(c))
+print(type(bool(c)))
+
+print(d)
+print(type(d))
+print(bool(d))
+print(type(bool(d)))
+
+output:
+10
+<class 'int'>
+True
+<class 'bool'>
+10.5
+<class 'float'>
+True
+<class 'bool'>
+(10+20j)
+<class 'complex'>
+True
+<class 'bool'>
+hello
+<class 'str'>
+True
+<class 'bool'>
+
+
+Note:  bool() returns True when data is non-zero, non-empty string.
+
+Example:
+a=0
+b=0.0
+c=0+0j
+d=""
+
+print(a)
+print(type(a))
+print(bool(a))
+print(type(bool(a)))
+
+print(b)
+print(type(b))
+print(bool(b))
+print(type(bool(b)))
+
+print(c)
+print(type(c))
+print(bool(c))
+print(type(bool(c)))
+
+print(d)
+print(type(d))
+print(bool(d))
+print(type(bool(d)))
+
+
+
+
+
+
+Output:
+
+0
+<class 'int'>
+False
+<class 'bool'>
+0.0
+<class 'float'>
+False
+<class 'bool'>
+0j
+<class 'complex'>
+False
+<class 'bool'>
+<class 'str'>
+False
+<class 'bool'>
+
+Note: bool () returns False when data is zero, empty string.
+5.str():
+Example:
+a=10
+b=10.5
+print(a)
+print(type(a))
+print(str(a))
+print(type(str(a)))
+print(b)
+print(type(b))
+print(str(b))
+print(type(str(b)))
+Output:
+10
+<class 'int'>
+10
+<class 'str'>
+10.5
+<class 'float'>
+10.5
+<class 'str'>
+Example:
+a=10+20j
+print(a)
+print(type(a))
+print(str(a))
+print(type(str(a)))
+Output:
+(10+20j)
+<class 'complex'>
+(10+20j)
+<class 'str'>
+Example:
+a=True
+b=False
+print(a)
+print(type(a))
+print(str(a))
+print(type(str(a)))
+print(b)
+print(type(b))
+print(str(b))
+print(type(str(b)))
+Output:
+True
+<class 'bool'>
+True
+<class 'str'>
+False
+<class 'bool'>
+False
+<class 'str'>
+
+Note:  we can convert any data type to string data type is possible.
+
+Immutable and Mutable:
+•	Immutable means unable to change and Mutable   means change
+•	In python everything treated as an object. Every object holds   by variable. When an object is initiated a unique id generated. Data type of variable defined at run time of program. Once object is created this object never changeable.
+•	"Once object will created we can't change the state of object is known as Immutable"
+Example:
+x=10
+print(x)
+print(id(x))
+x=x+1  #x=10+1=11
+print(x)
+print(id(x))
+
+Output:
+10
+1379387344
+11
+1379387376
+Note:  "All fundamental data types are immutable"
+
+Example: 
+a="hello world"
+b=a[3:6]
+print(a)
+print(b)
+print(id(a))
+print(id(b))
+
+output:
+hello world
+lo
+1862119233584
+1862119253808
+
+Need of immutable:
+•	Object sharing is possible so that memory utilization improved then performance will be improved.
+
+Example:
+a=10
+b=20
+c=30
+d=10
+e=20
+f=30
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+print(c)
+print(id(c))
+print(d)
+print(id(d))
+print(e)
+print(id(e))
+print(f)
+print(id(f))
+
+
+output:
+10
+1691600848
+20
+1691601168
+30
+1691601488
+10
+1691600848
+20
+1691601168
+30
+1691601488
+
+
+
+
+
+
+
+
+Example:	a=10.5
+b=20.5
+c=30.5
+d=10.5
+e=20.5
+f=30.5
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+print(c)
+print(id(c))
+print(d)
+print(id(d))
+print(e)
+print(id(e))
+print(f)
+print(id(f))
+Output:
+10.5
+2552879190304
+20.5
+2552879190136
+30.5
+2552879190280
+10.5
+2552879190304
+20.5
+2552879190136
+30.5
+2552879190280
+Example:	a=True
+b=False
+c=True
+d=False
+e=True
+f=False
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+print(c)
+print(id(c))
+print(d)
+print(id(d))
+print(e)
+print(id(e))
+print(f)
+print(id(f))
+output:
+True
+1691119840
+False
+1691119872
+True
+1691119840
+False
+1691119872
+True
+1691119840
+False
+1691119872
+Example:	a="Hello"
+b="Hai"
+c="Hello"
+d="Hai"
+e="Hello"
+f="Hai"
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+print(c)
+print(id(c))
+print(d)
+print(id(d))
+print(e)
+print(id(e))
+print(f)
+print(id(f))
+output:
+Hello
+3027198468368
+Hai
+3027198469936
+Hello
+3027198468368
+Hai
+3027198469936
+Hello
+3027198468368
+Hai
+3027198469936
+Example:	a=20+20j
+b=22+22j
+c=20+20j
+d=22+22j
+e=20+20j
+f=22+22j
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+print(c)
+print(id(c))
+print(d)
+print(id(d))
+print(e)
+print(id(e))
+print(f)
+print(id(f))
+output:
+(20+20j)
+2537078029424
+(22+22j)
+2537078029456
+(20+20j)
+2537078029488
+(22+22j)
+2537078029520
+(20+20j)
+2537078029552
+(22+22j)
+2537078029584
+
+Note: Complex data type is not sharing the object to variables	
+6.List Data Type:
+•	To store group of elements as single entry is known as collections (or array).
+Example:
+l=[1,2,3,4,5,6,7,8]
+print(l)
+print(type(l))
+
+Output
+[1, 2, 3, 4, 5, 6, 7, 8]
+<class 'list'>
+Features of the List data type:
+1.	In List order is preserved 
+Example:
+l=["A","B","C","D","E","F"]
+print(l)
+print(type(l))
+Output:
+['A', 'B', 'C', 'D', 'E', 'F']
+<class 'list'>
+
+
+2. Duplicate elements are allowed 
+Example:
+l=["A","B","C","D","E","F","A","B","D"]
+print(l)
+print(type(l))
+
+Output:
+['A', 'B', 'C', 'D', 'E', 'F', 'A', 'B', 'D']
+<class 'list'>
+
+3. List allow Heterogeneous objects.
+Example:
+l=["A","B","C","D","E","F","A","B","D",1,2,3,True,False,20+10j,1.2,2.2]
+print(l)
+print(type(l))
+Output:
+['A', 'B', 'C', 'D', 'E', 'F', 'A', 'B', 'D', 1, 2, 3, True, False, (20+10j), 1.2, 2.2]
+<class 'list'>
+
+
+4. List supports index and slicing 
+Example:
+l=["A","B","C","D","E","F","A","B","D",1,2,3,True,False,20+10j,1.2,2.2]
+print(l)
+print(type(l))
+print(l[12])
+print(l[2])
+print(l[2:6])
+
+Output:
+['A', 'B', 'C', 'D', 'E', 'F', 'A', 'B', 'D', 1, 2, 3, True, False, (20+10j), 1.2, 2.2]
+<class 'list'>
+True
+C
+['C', 'D', 'E', 'F']
+
+
+
+
+
+
+5. List data type is mutable
+
+Example:
+l=[1,2,3,4]
+print(l)
+print(id(l))
+l.append(5)
+print(l)
+print(id(l))
+
+l[2]=999
+print(l)
+print(id(l))
+l.remove(4)
+print(l)
+print(id(l))
+
+output:
+[1, 2, 3, 4]
+2419837933640
+[1, 2, 3, 4, 5]
+2419837933640
+[1, 2, 999, 4, 5]
+2419837933640
+[1, 2, 999, 5]
+2419837933640
+
+
+
+
+
+7. Tuple data type:
+1.	Tuple is represent ()
+2.	Tuple is same as List
+3.	Tuple is immutable
+4.	Tuple also known as read only version of list 
+5.	Tuple follow index and slicing
+
+
+Example:
+t=(1,2,3,4,5)
+print(t)
+print(type(t))
+print(id(t))
+
+Output:
+(1, 2, 3, 4, 5)
+<class 'tuple'>
+2340929458776
+
+Example:
+t=(1,2,3,4,5)
+print(t)
+print(t[2])
+print(t[4])
+print(t[2:5])
+
+output:
+(1, 2, 3, 4, 5)
+3
+5
+(3, 4, 5)
+
+Example:
+t=(1,2,3,4,5)
+print(t)
+t.append(6)
+output:
+(1, 2, 3, 4, 5)
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    t.append(6)
+AttributeError: 'tuple' object has no attribute 'append'
+
+Example:
+t=(1,2,3,4,5)
+print(t)
+t[3]=200
+Output:
+(1, 2, 3, 4, 5)
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    t[3]=200
+TypeError: 'tuple' object does not support item assignment
+Example:
+t=()
+print(t)
+print(type(t))
+
+Output:
+()
+<class 'tuple'>
+
+
+Example:
+t=(1)
+print(t)
+print(type(t))
+
+Output:
+1
+<class 'int'>
+
+Example:
+t=(1,2)
+print(t)
+print(type(t))
+
+Output:
+(1, 2)
+<class 'tuple'>
+
+Example:
+t=(1,)
+print(t)
+print(type(t))
+
+Output:
+(1,)
+<class 'tuple'>
+
+
+
+
+
+8. Set Data type:
+Features of Set data type:
+1.	Order is not preserved
+2.	Duplicate elements are not allowed
+3.	Set  with elements s= {1,2,3}or s=set([1,2,3]) or s=set((1,2,3))
+4.	empty set :  set()
+5.	Index and slicing concepts not applicable for set
+6.	Heterogeneous objects 	are allowed
+7.	Set is mutable data type
+
+Example:
+s={1,2,3,4,5,6,7,8}
+print(s)
+print(type(s))
+
+Output:
+{1, 2, 3, 4, 5, 6, 7, 8}
+<class 'set'>
+Example:
+s={1,2,3,4,5,6,7,8}
+print(s[4])
+Output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print(s[4])
+TypeError: 'set' object does not support indexing
+Example:       	s={1,2,3,4,5,6,7,8}
+print(s[4:8])
+Output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print(s[4:8])
+TypeError: 'set' object is not subscriptable
+Example:
+s={1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8}
+print(s)
+Output:
+{1, 2, 3, 4, 5, 6, 7, 8}
+
+Example:
+s={1,2,3,4,5,6,7,8,"A",2.5,20+6j,True}
+print(s)
+Output:
+{1, 2, 3, 4, 5, 6, 7, 8, 2.5, (20+6j), 'A'}
+
+Example:
+s={}
+print(s)
+print(type(s))
+Output:
+{}
+<class 'dict'>
+
+Example:
+s={1,2,3}
+print(s)
+print(type(s))
+output:
+{1, 2, 3}
+<class 'set'>
+
+
+
+
+Example:
+s={1}
+print(s)
+print(type(s))
+Output:
+{1}
+<class 'set'>
+
+Example:
+s={1,2,3}
+print(s)
+print(type(s))
+
+Output:
+{1, 2, 3}
+<class 'set'>
+
+Example 
+s=set()
+print(s)
+print(type(s))
+
+Output:
+set()
+<class 'set'>
+
+
+
+
+
+
+Example:
+s={1,2,3,4,5}
+print(s)
+s.add(6)
+print(s)
+s.remove(2)
+print(s)
+Output:
+{1, 2, 3, 4, 5}
+{1, 2, 3, 4, 5, 6}
+
+9.Dictionary Data type:
+------------------------
+To represent key and value pairs we can go for dictionary data type
+
+syntax:
+	{key1:value1,key2:value2}
+	
+Example:
+d={100:"Jagan",200:"Raj",300:"Ram",400:"Khan"}
+print(d)
+print(type(d))
+
+output:
+{100: 'Jagan', 200: 'Raj', 300: 'Ram', 400: 'Khan'}
+<class 'dict'>
+
+Example:
+
+
+d={}
+#d[key]=value
+d[100]="Jagn"
+d[200]="Raj"
+d[300]="Ram"
+d[400]="Khan"
+print(d)
+
+output:
+{100: 'Jagn', 200: 'Raj', 300: 'Ram', 400: 'Khan'}
+
+Features of dictionary:
+-----------------------
+1.order is not preserved in dictionary
+2.Index and slice concepts not applicable
+3.In dictionary duplicate values are allowed but duplicate keys are not allowed.
+Eg:
+d={100: 'Jagn', 200: 'Raj', 300: 'Ram', 400: 'Khan',100:"Mohan",500:"Raj"}
+print(d)
+output:
+{100: 'Mohan', 200: 'Raj', 300: 'Ram', 400: 'Khan', 500: 'Raj'}
+4.Dictionary is mutable data type
+5.We can take Heterogeneous data for key and values
+
+10.range():
+----------
+We can represent range of dequnce of numbers we  go for range data type
+
+Format 1: range(x)
+-----------------
+Eg:
+r=range(10)#0 to 9
+print(r)
+print(type(r))
+
+output:
+range(0, 10)
+<class 'range'>
+Eg:
+r=range(10)#0,1,2,3,4,5,6,7,8,9
+print(r)
+print(type(r))
+
+for x in r:
+    print(x)
+
+output:
+range(0, 10)
+<class 'range'>
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+Format 2: range(x,y)
+-------------------
+
+Eg:
+r=range(50,100)
+print(r)
+for x in r:
+    print(x)
+    
+output:
+range(50, 100)
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+
+Format 3: range(x,y,z)
+-------------------
+Eg:
+r=range(50,100,2)
+print(r)
+for x in r:
+    print(x)
+    
+output:
+range(50, 100, 2)
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+
+feature of range data type:
+-----------------------------
+1.Range data type is immutable
+2.range(x,y,z) here we can take only intergers for x,y and z 
+Eg:  
+r=range(10.5)
+print(r)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    r=range(10.5)
+TypeError: 'float' object cannot be interpreted as an integer
+
+
+eg:
+r=range(10,20.5)
+print(r)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    r=range(10,20.5)
+TypeError: 'float' object cannot be interpreted as an integer
+
+Eg:
+r=range(10,20,2.5)
+print(r)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    r=range(10,20,2.5)
+TypeError: 'float' object cannot be interpreted as an integer
+
+11.None:
+--------
+
+To handle a situation where value is not assositaed with variable
+
+Eg:
+a=None
+print(a)
+print(type(a))
+
+output:
+None
+<class 'NoneType'>
+
+Eg:
+  File "test.py", line 4
+    b=
+     ^
+SyntaxError: invalid syntax
+
+Eg:
+def f1():
+    a=10
+def f2():
+    b=None
+    
+f1()
+f2()
+
+How we can comment the python code:
+------------------------------------
+
+Eg:
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+
+output:
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+
+
+eg:
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+'''print("Hello")
+print("Hello")
+print("Hello")'''
+print("Hello")
+print("Hello")
+print("Hello")
+
+output:
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+
+Eg:
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+#print("Hello")
+#print("Hello")
+#print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+
+output:
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+
+Operators:
+----------
+The symbol which is responsible to perform some operations is known as an operator
+1.Arthemetic operators
+2.Relational operators
+3.Logical operators
+4.Bitwise operators
+5.Shift operators
+6.Assinment operators
+7.Ternary operators
+8.Equality operators
+9.Special operators
+
+
+1.Arthemetic operators:
+------------------------
+'+'  symbol which is used for addtion operations
+'-'  symbol which is used for subtraction operations
+'*'  symbol which is used for multiplication operations
+'/'  symbol which is used for division  operations
+'%'  symbol which is used for modulo operations
+'//'  symbol which is used for floor division operations
+'**'  symbol which is used for power  operations
+
+
+Example:
+a=10
+b=20
+print("Addtion:",a+b)
+print("Subtraction:",a-b)
+print("Mutliplication:",a*b)
+print("Division:",a/b)
+print("Reminder:",a%b)
+output:
+
+Addtion: 30
+Subtraction: -10
+Mutliplication: 200
+Division: 0.5
+Reminder: 10
+
+Eg:
+a=4
+b=2
+print("Addtion:",a+b)
+print("Subtraction:",a-b)
+print("Mutliplication:",a*b)
+print("Division:",a/b)
+print("Reminder:",a%b)
+
+
+output:
+Addtion: 6
+Subtraction: 2
+Mutliplication: 8
+Division: 2.0
+Reminder: 0
+
+
+Eg:
+a=4
+b=2
+print("Division:",a/b)
+print("Floor Division:",a//b)
+
+
+output:
+Division: 2.0
+Floor Division: 2
+
+Eg:
+a=4
+b=3
+print("Division:",a/b)
+print("Floor Division:",a//b)
+
+output:
+Division: 1.3333333333333333
+Floor Division: 1
+
+Eg:
+a=4.5
+b=3.5
+print("Division:",a/b)
+print("Floor Division:",a//b)
+
+output:
+Division: 1.2857142857142858
+Floor Division: 1.0
+
+eg:
+a=4.5
+b=3
+print("Division:",a/b)
+print("Floor Division:",a//b)
+
+
+output:
+Division: 1.5
+Floor Division: 1.0
+
+
+Note: 
+ '/' operator allways return float data type only.
+ '//' operator returns integer data or floa data based given data 
+ Eg:
+	Consider a//b   if a and b both are integers floor divison operator returns integer value
+	if you take either a or b or both float data type floor division returns float data type only with roundended value(Eg:2.0).
+	
+	
+** operator:
+-------------
+
+Eg:
+a=10
+b=2
+print("a power of b",a**b)  # 10^2
+output:
+a power of b 100
+
+
+Eg:
+a=10
+b=2.5
+print("a power of b",a**b)  
+
+output:
+a power of b 316.22776601683796
+
+
+2.Relational operators:
+-----------------------
+Relational operators are
+
+'<' Lessthan
+'<=' Lessthan or equal
+'>' Greterthan
+'>=" Greterthan or equal
+
+Note: Relational operators allways returns boolean data only
+Eg:
+a=10
+b=20
+print(a<b)
+print(a<=b)
+print(a>b)
+print(a>=b)
+
+output:
+True
+True
+False
+False
+
+
+Eg:
+a=20
+b=10
+print(a<b)
+print(a<=b)
+print(a>b)
+print(a>=b)
+
+
+output:
+False
+False
+True
+True
+
+Eg:
+a="a"    #unicode of 'a' is 97
+b="A"	#unicode of 'A' is 65
+print(a<b)  # 97<65
+
+
+output:
+False
+
+Note: All alphabets and special charcters internally having a Unicode or ASCII code values.
+By using Unicode or ASCII values relational operators will work
+
+Example:
+	unicode of 'A' is 65
+	unicode of 'B' is 66
+	unicode of 'a' is 97
+	unicode of 'b' is 98
+	
+ord():
+------
+To get ordinal or unicode value of specified charcter we go for ord()
+
+Eg:
+print(ord('A'))
+print(ord('B'))
+print(ord('a'))
+print(ord('b'))
+
+output:
+65
+66
+97
+98
+
+chr():
+------
+To get charcter of specified unicode or ordinal value we go for  chr()
+
+Eg:
+print(chr(97))
+print(chr(98))
+print(chr(65))
+print(chr(66))
+
+output:
+a
+b
+A
+B
+
+Eg:
+print(ord('?'))
+print(chr(63))
+
+output:
+63
+?
+
+
+Eg:
+a="Hello"
+b="hello"
+print(a<b)
+
+output:
+True
+
+Eg:
+a="Helloa"
+b="Hellob"
+
+print(a<b)
+
+output:
+True
+
+Eg:
+a="Helloa"
+b="HeLlob"
+
+print(a<b)  #l < L 
+
+output:
+False
+
+
+3.Logical operators:
+--------------------
+Logaical operators are and,or,not
+
+and operator:
+-------------
+
+Truth table for and operator:
+
+------------------------------
+A         B          A and B
+------------------------------
+True       True         True
+True       False         False
+False      True          False
+False       False        False
+
+
+
+
+
+Example:
+-------
+a=10
+b=20
+
+print(a and b)
+
+output:
+20
+
+Example:
+---------
+a=20
+b=10
+
+print(a and b)
+
+output:
+10
+
+Eg:
+a=0
+b=10
+
+print(a and b)
+
+output:
+0
+
+Eg:
+a=0
+b=False
+
+print(a and b)
+
+output:
+0
+
+Eg:
+a=False
+b=0
+
+print(a and b)
+
+
+output:
+False
+
+
+or operator:
+-------------
+
+Truth table for or operator:
+
+------------------------------
+A         B          A or B
+------------------------------
+True       True         True
+True       False        True
+False      True         True
+False       False       False
+
+
+Example:
+a=10
+b=20
+print( a or b)
+
+output:
+10
+
+Eg:
+a=0
+b=20
+print( a or b)
+
+output:
+20
+
+Eg:
+a=0
+b=False
+print( a or b)
+
+output:
+False
+
+Eg:
+a=20
+b=False
+print( a or b)
+
+output:
+20
+
+
+not operator:
+------------
+
+Truth table for not operator
+
+A    not A
+------------
+True     False
+False     True
+
+Eg:
+a=20
+print(not a)
+
+output:
+False
+
+
+Eg:
+a=0
+print(not a)
+
+output:
+True
+
+4.Bitwise operators:
+--------------------
+&
+|
+^
+~
+
+Eg:
+a=4
+b=5
+print(a & b)
+
+output:
+4
+
+Eg:
+a=4
+b=5
+print(a | b)
+
+output:
+5
+
+
+Eg:
+print(~4)
+output:
+-5
+
+Eg:
+a=5
+b=6
+print(a ^ b)
+
+
+output:
+3
+
+
+
+5. Shift operators:
+----------------------
+<<   left shift operator
+>>     right shift operators
+
+Eg:
+print(bin(10))
+print(bin(10<<2))
+
+Eg:
+print(bin(10))
+print(bin(10>>2))
+
+output:
+0b1010
+0b10
+
+
+6.Assignment operators:
+-----------------------
+a=10
+a,b,c,d=10,20,30,40
+
+Eg:
+a=10
+b=20
+c=30
+d=40
+print(a)
+print(b)
+print(c)
+print(d)
+
+output:
+10
+20
+30
+40
+
+Eg:
+a,b,c,d=10,20,30,40
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+output:
+10
+20
+30
+40
+
+
+compound assignment operators:
+------------------------------
+Assignment operator with some other operator combination is known as compound assignment operators
+
+
+Eg:
+
+Eg:
+x=10
+x+=1#x+=1------------>x=x+1------>x=10+1=11
+print(x)
+
+output:
+11
+
+Eg:
+x=10
+x+=20
+print(x)
+output:
+30
+
+Eg:
+x=10
+x-=1# x=x-1
+print(x)
+
+
+output:
+9
+
+
+
+Operator
+Description
+Example
+Equivalent
++=
+Add the value to the left-hand variable
+x += 2
+x = x + 2
+-=
+Subtract the value from the left-hand variable
+x -= 2
+x = x - 2
+*=
+Multiple the left-hand variable by the value
+x *= 2
+x = x * 2
+/=
+Divide the variable value by the right-hand value
+x /= 2
+x = x/2
+//=
+
+Use integer division to divide the variable's value by
+the right-hand value
+x //= 2
+
+x = x//2
+
+%=
+
+Use the modulus (remainder) operator to apply the
+right-hand value to the variable
+x %= 2
+
+x = x % 2
+
+**=
+
+Apply the power of operator to raise the variable 's
+value by the value supplied
+x **= 3
+
+x = x ** 3
+
+7.Equality operator:
+--------------------
+To compare contentent of an object we go for equality operators
+Equality operators are 
+1.== ----------->Equality operator
+2.!= ------------->Not equal operator
+
+
+Eg:
+a=20+30j
+b=40+60j
+c=20+30j
+print(id(a))
+print(id(b))
+print(id(c))
+
+print(a==b)
+print(a==c)
+
+print(a!=b)
+print(a!=c)
+
+output:
+1565722835888
+1565722835920
+1565722835952
+False
+True
+True
+False
+
+
+8.Ternary operator:
+---------------------
+~4 ----------->unianry operator
+10+2----------->Binary operator
+
+
+syntax:
+-------
+	x=  value1  if condtion value2 
+Eg:
+x=30 if 10<20 else 40 
+print(x)
+
+output:
+30
+
+Eg:
+x=30 if 10>20 else 40 
+print(x)
+
+output:
+40
+
+
+9.Special operators:
+--------------------
+1.identity operators
+2.Membership operators
+
+1.identity operators:
+---------------------
+To compare id's of objects we go for identity operators
+Identity operators are is  , is not
+
+
+Eg:
+a=10
+b=20
+c=30
+d=10
+
+print(id(a))
+print(id(b))
+print(id(c))
+print(id(d))
+
+
+print(a is b)
+print( a is c)
+print( a is d)
+print(id(a)==id(d))
+
+
+output:
+1715849168
+1715849488
+1715849808
+1715849168
+False
+False
+True
+True
+
+Eg:
+a=10
+b=20
+c=30
+d=10
+
+print(id(a))
+print(id(b))
+print(id(c))
+print(id(d))
+
+
+print(a is not  b)
+print( a is not  c)
+print( a is not d)
+print(id(a)==id(d))
+
+
+print(a is not d)
+
+
+output:
+1715849168
+1715849488
+1715849808
+1715849168
+True
+True
+False
+True
+False
+
+
+2.Membership operators:
+---------------------------
+If a perticular charcter or group of characters are a member of given data or not.
+Membership operators are in , not in.
+
+Eg:
+a=[1,2,3,4,5,6,7,8]
+print(a)
+print(4 in a)
+print(100 in a)
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8]
+True
+False
+
+Eg:
+a=[1,2,3,4,5,6,7,8]
+print(a)
+print(4 not in a)
+print(100 not in a)
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8]
+False
+True
+
+Eg:
+a="Hello How Are You !"
+print("e" in a)
+print("Are" in a)
+print("are" in a)
+
+print("HYou" in a)
+
+output:
+True
+True
+False
+False
+
+
+
+
+Modules:
+-------
+Module is nothing but a group of variables , functions and classes saved into 
+a python file.
+
+
+XYZ.py
+a=100
+b=200
+
+def total(x,y):
+    print("Total:",x+y)
+def product(x,y):
+    print("Product:",x*y)
+    
+	
+test.py
+import xyz
+
+print(xyz.a)
+print(xyz.b)
+
+xyz.total(20,30)
+xyz.product(2,4)
+
+output:
+100
+200
+Total: 50
+Product: 8
+
+
+Variois ways to import modules:
+--------------------------------
+
+1.import XYZ
+
+Eg:
+import xyz
+
+print(xyz.a)
+print(xyz.b)
+
+xyz.total(20,30)
+xyz.product(2,4)
+
+
+
+2.from xyz import *
+
+Eg:
+from xyz import *
+
+print(a)
+print(b)
+total(10,20)
+product(3,4)
+
+
+output:
+100
+200
+Total: 30
+Product: 12
+
+3.from xyz import a , product
+Eg:
+from xyz import a , product
+
+print(a)
+product(10,2)
+
+output:
+100
+Product: 20
+
+
+Eg:
+from xyz import a , product
+
+print(a)
+product(10,2)
+print(b)
+
+
+output:
+100
+Product: 20
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    print(b)
+NameError: name 'b' is not defined
+
+4.import xyz   as x
+eg:
+import xyz   as x
+print(x.a)
+print(x.b)
+x.total(2,5)
+x.product(10,20)
+output:
+100
+200
+Total: 7
+Product: 200
+
+5.from xyz  import  total as t, product as p
+Eg:
+from xyz  import  total as t, product as p
+
+t(10,20)
+p(2,4)
+
+
+output:
+Total: 30
+Product: 8
+
+
+math module:
+--------------
+we can perform any mathematical operations we can go for math module.
+Eg:
+from math import *
+
+print(sqrt(4))
+
+print(sin(90))
+
+output:
+2.0
+0.8939966636005579
+
+Eg:
+import math
+
+help(math)
+
+output:
+Help on built-in module math:
+
+NAME
+    math
+
+DESCRIPTION
+    This module is always available.  It provides access to the
+    mathematical functions defined by the C standard.
+
+FUNCTIONS
+    acos(...)
+        acos(x)
+
+        Return the arc cosine (measured in radians) of x.
+
+    acosh(...)
+        acosh(x)
+
+        Return the inverse hyperbolic cosine of x.
+
+    asin(...)
+        asin(x)
+
+        Return the arc sine (measured in radians) of x.
+
+    asinh(...)
+        asinh(x)
+
+        Return the inverse hyperbolic sine of x.
+
+    atan(...)
+        atan(x)
+
+        Return the arc tangent (measured in radians) of x.
+
+    atan2(...)
+        atan2(y, x)
+
+        Return the arc tangent (measured in radians) of y/x.
+        Unlike atan(y/x), the signs of both x and y are considered.
+
+    atanh(...)
+        atanh(x)
+
+        Return the inverse hyperbolic tangent of x.
+
+    ceil(...)
+        ceil(x)
+
+        Return the ceiling of x as an Integral.
+        This is the smallest integer >= x.
+
+    copysign(...)
+        copysign(x, y)
+
+        Return a float with the magnitude (absolute value) of x but the sign
+        of y. On platforms that support signed zeros, copysign(1.0, -0.0)
+        returns -1.0.
+
+    cos(...)
+        cos(x)
+
+        Return the cosine of x (measured in radians).
+
+    cosh(...)
+        cosh(x)
+
+        Return the hyperbolic cosine of x.
+
+    degrees(...)
+        degrees(x)
+
+        Convert angle x from radians to degrees.
+
+    erf(...)
+        erf(x)
+
+        Error function at x.
+
+    erfc(...)
+        erfc(x)
+
+        Complementary error function at x.
+
+    exp(...)
+        exp(x)
+
+        Return e raised to the power of x.
+
+    expm1(...)
+        expm1(x)
+
+        Return exp(x)-1.
+        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.
+
+    fabs(...)
+        fabs(x)
+
+        Return the absolute value of the float x.
+
+    factorial(...)
+        factorial(x) -> Integral
+
+        Find x!. Raise a ValueError if x is negative or non-integral.
+
+    floor(...)
+        floor(x)
+
+        Return the floor of x as an Integral.
+        This is the largest integer <= x.
+
+    fmod(...)
+        fmod(x, y)
+
+        Return fmod(x, y), according to platform C.  x % y may differ.
+
+    frexp(...)
+        frexp(x)
+
+        Return the mantissa and exponent of x, as pair (m, e).
+        m is a float and e is an int, such that x = m * 2.**e.
+        If x is 0, m and e are both 0.  Else 0.5 <= abs(m) < 1.0.
+
+    fsum(...)
+        fsum(iterable)
+
+        Return an accurate floating point sum of values in the iterable.
+        Assumes IEEE-754 floating point arithmetic.
+
+    gamma(...)
+        gamma(x)
+
+        Gamma function at x.
+
+    gcd(...)
+        gcd(x, y) -> int
+        greatest common divisor of x and y
+
+    hypot(...)
+        hypot(x, y)
+
+        Return the Euclidean distance, sqrt(x*x + y*y).
+
+    isclose(...)
+        isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0) -> bool
+
+        Determine whether two floating point numbers are close in value.
+
+           rel_tol
+               maximum difference for being considered "close", relative to the
+               magnitude of the input values
+            abs_tol
+               maximum difference for being considered "close", regardless of the
+               magnitude of the input values
+
+        Return True if a is close in value to b, and False otherwise.
+
+        For the values to be considered close, the difference between them
+        must be smaller than at least one of the tolerances.
+
+        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That
+        is, NaN is not close to anything, even itself.  inf and -inf are
+        only close to themselves.
+
+    isfinite(...)
+        isfinite(x) -> bool
+
+        Return True if x is neither an infinity nor a NaN, and False otherwise.
+
+    isinf(...)
+        isinf(x) -> bool
+
+        Return True if x is a positive or negative infinity, and False otherwise.
+
+    isnan(...)
+        isnan(x) -> bool
+
+        Return True if x is a NaN (not a number), and False otherwise.
+
+    ldexp(...)
+        ldexp(x, i)
+
+        Return x * (2**i).
+
+    lgamma(...)
+        lgamma(x)
+
+        Natural logarithm of absolute value of Gamma function at x.
+
+    log(...)
+        log(x[, base])
+
+        Return the logarithm of x to the given base.
+        If the base not specified, returns the natural logarithm (base e) of x.
+
+    log10(...)
+        log10(x)
+
+        Return the base 10 logarithm of x.
+
+    log1p(...)
+        log1p(x)
+
+        Return the natural logarithm of 1+x (base e).
+        The result is computed in a way which is accurate for x near zero.
+
+    log2(...)
+        log2(x)
+
+        Return the base 2 logarithm of x.
+
+    modf(...)
+        modf(x)
+
+        Return the fractional and integer parts of x.  Both results carry the sign
+        of x and are floats.
+
+    pow(...)
+        pow(x, y)
+
+        Return x**y (x to the power of y).
+
+    radians(...)
+        radians(x)
+
+        Convert angle x from degrees to radians.
+
+    sin(...)
+        sin(x)
+
+        Return the sine of x (measured in radians).
+
+    sinh(...)
+        sinh(x)
+
+        Return the hyperbolic sine of x.
+
+    sqrt(...)
+        sqrt(x)
+
+        Return the square root of x.
+
+    tan(...)
+        tan(x)
+
+        Return the tangent of x (measured in radians).
+
+    tanh(...)
+        tanh(x)
+
+        Return the hyperbolic tangent of x.
+
+    trunc(...)
+        trunc(x:Real) -> Integral
+
+        Truncates x to the nearest Integral toward 0. Uses the __trunc__ magic method.
+
+DATA
+    e = 2.718281828459045
+    inf = inf
+    nan = nan
+    pi = 3.141592653589793
+    tau = 6.283185307179586
+
+FILE
+    (built-in)
+
+
+Eg:
+from math import *
+#area of circle=pi*(r**2)
+r=10
+a=pi*(r**2)
+print(a)
+
+output:
+314.1592653589793
+
+
+Input and Output Statements:
+------------------------------
+
+Input Statements:
+-----------------
+To take data from end user (command prompt ) we can go for input statements
+
+Eg:
+a=input()
+print(a)
+
+output:
+10
+10
+
+Eg:
+a=input("Enter Number:")
+print(a)
+
+output:
+Enter Number:20
+20
+
+Eg:
+a=input("Enter Number:")
+print(type(a))
+print(a)
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Number:20
+<class 'str'>
+20
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Number:20.5
+<class 'str'>
+20.5
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Number:20+80j
+<class 'str'>
+20+80j
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Number:True
+<class 'str'>
+True
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Number:"Hello"
+<class 'str'>
+"Hello"
+
+Note:What ever data taken from end user (data taken from input ())
+ is always string format only.
+ 
+ Eg:
+ s1=input("Enter First subject Marks:")
+s2=input("Enter Second subject Marks:")
+s3=input("Enter Third  subject Marks:")
+total=s1+s2+s3
+print("Total:",total)
+avg=total/300
+print("Avg:",avg)
+output:
+Enter First subject Marks:70
+Enter Second subject Marks:80
+Enter Third  subject Marks:90
+Total: 708090
+Traceback (most recent call last):
+  File "test.py", line 6, in <module>
+    avg=total/300
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+Eg:
+s1=int(input("Enter First subject Marks:"))
+s2=int(input("Enter Second subject Marks:"))
+s3=int(input("Enter Third  subject Marks:"))
+total=s1+s2+s3
+print("Total:",total)
+avg=total/300
+print("Avg:",avg)
+
+
+output:
+Enter First subject Marks:70
+Enter Second subject Marks:80
+Enter Third  subject Marks:90
+Total: 240
+Avg: 0.8
+
+Eg:
+m=int(input("Enter maths marks:"))
+s=int(input("Enter Sci marks:"))
+
+max_marks=  s if m<s else m
+print("Max marks:",max_marks)
+
+output:
+Enter maths marks:80
+Enter Sci marks:90
+Max marks: 90
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter maths marks:70
+Enter Sci marks:80
+Max marks: 80
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter maths marks:80
+Enter Sci marks:60
+Max marks: 80
+
+eval():
+-------
+
+
+Eg:
+a=eval(input("Enter a data:"))
+print(a)
+print(type(a))
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a data:10
+10
+<class 'int'>
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a data:10.5
+10.5
+<class 'float'>
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a data:20+20j
+(20+20j)
+<class 'complex'>
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a data:True
+True
+<class 'bool'>
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a data:"Hello"
+Hello
+<class 'str'>
+
+output statements:
+-------------------
+print() ------------->Inserted a new line
+print("Hello")
+print("Hello"+"How are you")
+
+
+Eg:
+print("Hai")
+print("Hello")
+print("Hello"+"How are you")
+
+output:
+Hai
+Hello
+HelloHow are you
+
+Eg:
+print("Hai")
+print()
+print("Hello")
+print("Hello"+"How are you")
+
+
+output:
+Hai
+
+Hello
+HelloHow are you
+
+eg:
+a,b,c=10,20,30
+print(a,b,c)
+print(a,b,c,sep=',')
+print(a,b,c,sep='-')
+print(a,b,c,sep='#')
+
+output:
+10 20 30
+10,20,30
+10-20-30
+10#20#30
+
+Eg:
+a="Hello"
+b="How"
+c="Are"
+d="You"
+print(a)
+print(b)
+print(c)
+print(d)
+
+output:
+Hello
+How
+Are
+You
+
+Eg:
+a="Hello"
+b="How"
+c="Are"
+d="You"
+print(a,end='')
+print(b,end='')
+print(c,end='')
+print(d)
+
+
+output:
+HelloHowAreYou
+Eg:
+a="Hello"
+b="How"
+c="Are"
+d="You"
+print(a,end=' ')
+print(b,end=' ')
+print(c,end=' ')
+print(d)
+
+output:
+Hello How Are You
+
+Eg:
+name=input("Enter Student Name:")
+sid=input("Enter student Id:")
+branch=input("Enter student Branch:")
+
+print("Student name is {}, id is {} belongs to {} branch".format(name,sid,branch))
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Student Name:Jagan
+Enter student Id:222
+Enter student Branch:EEE
+Student name is Jagan, id is 222 belongs to EEE branch
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Student Name:Raj
+Enter student Id:200
+Enter student Branch:CSE
+Student name is Raj, id is 200 belongs to CSE branch
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Student Name:Basha
+Enter student Id:400
+Enter student Branch:CIVIL
+Student name is Basha, id is 400 belongs to CIVIL branch
+
+command line arguments:
+------------------------
+The arguments which are passed from command prompt are known as command line arguments.
+
+sys ----------> module name
+argv ---------->variable
+
+Eg:
+from sys import argv
+print(argv)
+print(type(argv))
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['test.py']
+<class 'list'>
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py   1 2 3 4 5 6 7 8
+['test.py', '1', '2', '3', '4', '5', '6', '7', '8']
+<class 'list'>
+
+Eg:
+from sys import argv
+args=argv[1:]
+print(args)
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py   1 2 3 4 5 6 7 8
+['1', '2', '3', '4', '5', '6', '7', '8']
+
+
+Eg:
+from sys import argv
+args=argv[1:]
+print(args)
+total=0
+for x  in args:#['10', '20', '30', '40', '50']
+    total=total+int(x)
+    
+print("Total:",total)
+
+output:
+['10', '20', '30', '40', '50']
+Total: 150
+
+
+Flow control:
+-------------
+At run time in which order statement going to be executed is decided by flow control
+
+Indentation:
+------------
+Indentation in python reffers to a tab space.
+Eg:
+if 10>20:
+    print("Hello")
+
+print("Hai")
+
+Eg:
+if (10>20):
+   print("Hello")
+    print("How")
+
+print("Hai")
+
+output:
+  File "test.py", line 3
+    print("How")
+    ^
+IndentationError: unexpected indent
+
+
+1.condtional statements:
+----------------------
+condtional statements are 
+1.if 
+2.if  else
+3.if  elif   else
+4.if elif elif .....else.
+Eg:
+#WAP to find largest number in given two numbers.
+n1=int(input("Enter First Number:"))
+n2=int(input("Enter Second  Number:"))
+if n1>n2:
+    print("Large number:",n1)
+else:
+    print("Large number:",n2)
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:10
+Enter Second  Number:20
+Large number: 20
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:20
+Enter Second  Number:10
+Large number: 20
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:11
+Enter Second  Number:12
+Large number: 12
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:12
+Enter Second  Number:11
+Large number: 12
+
+eg:
+#WAP to find largest number in given three numbers.
+n1=int(input("Enter First Number:"))
+n2=int(input("Enter Second  Number:"))
+n3=int(input("Enter Third  Number:"))
+
+if n1>n2  and n1>n3:
+    print("Large number :",n1)
+elif n2>n3:
+    print("Large number :",n2)
+else:
+    print("Large number :",n3)
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:30
+Enter Second  Number:20
+Enter Third  Number:10
+Large number : 30
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:10
+Enter Second  Number:30
+Enter Third  Number:20
+Large number : 30
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter First Number:10
+Enter Second  Number:20
+Enter Third  Number:30
+Large number : 30
+
+
+Eg:
+n=int(input("Enter a number:"))
+if 1<=n<=100:
+    print("Yes")
+else:
+    print("No")
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:10
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:90
+Yes
+
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:1
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:100
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:101
+No
+
+Eg:
+n=int(input("Enter a number:"))
+if n in range(1,101):
+    print("Yes")
+else:
+    print("No")
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:1
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:90
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:100
+Yes
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:101
+No
+
+Eg:
+n=int(input("Enter a number:"))
+if n%2==0:
+    print("Even Number")
+else:
+    print("odd Number")
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:2
+Even Number
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:8
+Even Number
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:998
+Even Number
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:667
+odd Number
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter a number:789
+odd Number
+Eg:
+list_of_states=["AP","TS","TN","KA","KL"]
+print(list_of_states)
+state=input("Enter Your State Name:")
+if state in list_of_states:
+    if state=="AP":
+        print("AMVARVATHI")
+    elif state=="TS":
+        print("HYD")
+    elif state=="TN":
+        print("CHEN")
+    elif state=="KA":
+        print("BANG")
+    else:
+        print("Tiruvanthapur")
+else:
+    print("Your Entered State not found")
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:AP
+AMVARVATHI
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:TS
+HYD
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:TN
+CHEN
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:KA
+BANG
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:KL
+Tiruvanthapur
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+['AP', 'TS', 'TN', 'KA', 'KL']
+Enter Your State Name:Odisa
+Your Entered State not found
+
+2.Iternative Statements:
+-------------------------
+
+1.for loop
+2.while loop
+
+1.for loop:
+----------
+If you have sequnce of elements (eg: list,tuple,set,dict,range)  to perform any operation 
+on each element in given sequence then we go for loop.
+
+syntax:
+-------
+	for   temapary_varible in sequence:
+Eg:  
+	for   x   in   list :
+Eg:
+for x in ['A','B','C','D']:
+    print(x)
+output:
+A
+B
+C
+D
+
+eg:
+for n in range(1,10):
+    print(n)
+output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+eg:
+for n in range(1,10):
+    print("sequre of {} is {}".format(n,n**2))
+
+
+output:
+sequre of 1 is 1
+sequre of 2 is 4
+sequre of 3 is 9
+sequre of 4 is 16
+sequre of 5 is 25
+sequre of 6 is 36
+sequre of 7 is 49
+sequre of 8 is 64
+sequre of 9 is 81
+
+
+n=range(1,101)
+print(n)
+even_list=[]
+odd_list=[]
+for x in n:
+    if  x%2==0:
+        even_list.append(x)
+    else:
+        odd_list.append(x)
+
+print(even_list)
+print(odd_list)
+
+output:
+range(1, 101)
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 
+24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44,
+ 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66,
+ 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 
+ 90, 92, 94, 96, 98, 100]
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25,
+ 27, 29, 31, 33, 35, 37, 39, 41, 
+ 43, 45, 47, 49, 51, 53, 55, 57, 
+ 59, 61, 63, 65, 67, 69, 71, 73, 
+ 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99]
+ 
+
+while loop:
+-----------
+
+To perform some operations on sequences based on some condtion.
+
+Eg:
+n=5
+total=0
+i=1
+while i<=n:#1<=5             2<=5          3<=5         4<=5           5<=5        6<=5
+    print(i)#1                2             3            4              5
+    total=total+i#total=0+1=1  total=1+2=3   total=3+3=6  total=6+4=10 total=10+5=15
+    i=i+1#i=1+1=2               i=2+1=3      i=3+1=4       i=4+1=5      i=5+1=6
+    
+print("Total:",total)
+
+output:
+1
+2
+3
+4
+5
+Total: 15
+
+Eg:
+s="Hello"
+n=len(s)-1#n=5-1=4
+i=0
+while i<=n:
+    print(s[i])
+    i=i+1
+output:
+H
+e
+l
+l
+o
+Eg:
+l=[1,2,3,4,5,6,7,8]
+i=0
+n=len(l)-1
+while i<=n:
+    print(l[i])
+    i=i+1
+    
+output:
+1
+2
+3
+4
+5
+6
+7
+8
+
+Eg:
+l=[1,2,3,4,5,6,7,8,9,10]
+i=0
+n=len(l)-1
+even_list=[]
+odd_list=[]
+while i<=n:
+    if l[i]%2==0:
+        even_list.append(l[i])
+    else:
+        odd_list.append(l[i])
+    i=i+1
+print(even_list)
+print(odd_list)
+
+
+output:
+[2, 4, 6, 8, 10]
+[1, 3, 5, 7, 9]
+
+Infinate loops:
+---------------
+There are some loops keep iterating whithout terminartion 
+
+Eg:
+n=5
+total=0
+i=1
+
+while i<=n:
+    print(i)
+    
+    
+ output:
+ 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Traceback (most recent call last):
+  File "test.py", line 6, in <module>
+    print(i)
+KeyboardInterrupt
+
+eg:
+while True:
+    print("Hello")
+    
+output:
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print("Hello")
+KeyboardInterrupt
+
+3.Tranfer statements:
+----------------------
+1.break
+2.continue
+
+1.break:
+--------
+Break the loop based on some condtion
+Eg:
+cart=[10,20,30,40,500,700,300]
+for item in cart:
+    print("Price:",item)
+output:
+Price: 10
+Price: 20
+Price: 30
+Price: 40
+Price: 500
+Price: 700
+Price: 300
+
+eg:
+cart=[10,20,30,40,500,700,300,100,20,40]
+for item in cart:
+    if item>500:#700>500
+        print("This item insurance required")
+        break
+    print("Price:",item)
+
+
+print("End")
+
+
+output:
+Price: 10
+Price: 20
+Price: 30
+Price: 40
+Price: 500
+This item insurance required
+End
+
+2.continue:
+-----------
+skip the current iteration based on some condtion.
+
+Eg:
+cart=[10,20,30,40,500,700,300,100,20,40]
+for item in cart:
+    if item>500:#700>500
+        print("This item insurance required")
+        continue
+    print("Price:",item)
+
+
+print("End")
+
+output:
+Price: 10
+Price: 20
+Price: 30
+Price: 40
+Price: 500
+This item insurance required
+Price: 300
+Price: 100
+Price: 20
+Price: 40
+End
+
+Eg:
+cart=[10,20,30,40,500,700,300,100,20,40,600,300,800,20]
+for item in cart:
+    if item>500:#700>500
+        print("This item insurance required for the item:",item )
+        continue
+    print("Price:",item)
+
+
+print("End")
+
+output:
+Price: 10
+Price: 20
+Price: 30
+Price: 40
+Price: 500
+This item insurance required for the item: 700
+Price: 300
+Price: 100
+Price: 20
+Price: 40
+This item insurance required for the item: 600
+Price: 300
+This item insurance required for the item: 800
+Price: 20
+End
+
+
+pass:
+-----
+if required some empty block we write pass statement
+
+Eg:
+for x in range(10,20):
+    
+    
+    
+    output:
+      File "test.py", line 3
+
+        ^
+SyntaxError: unexpected EOF while parsing
+
+
+Eg:
+for x in range(10,20):
+    pass
+    
+
+del statement:
+--------------
+del is key  word in python to delete object
+Eg:
+x=10
+print(x)
+del x
+print(x)
+
+
+output:
+10
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(x)
+NameError: name 'x' is not defined
+
+None:
+----
+if want to delete current object but don't want to delete variable we can go for None
+
+eg:
+x=10
+print(x)
+x=None
+print(x)
+
+
+output:
+10
+None
+
+
+
+Eg:
+states=["AP","TS"]
+AP_Dt=["KNL","ATP","CTR"]
+TS_Dt=["RR","WR","MNR"]
+ATP_MNDLS=["NPL","BKS","BTPH"]
+
+s=input("Enter State:")
+if s in states:
+    d=input("Enter Dist:")
+    if d in AP_Dt:
+        print(ATP_MNDLS)
+       
+    elif d in TS_Dt:
+        print(TS_Dt)
+    else:
+        print("No dist found")
+else:
+    print("No state found")
+
+
+Strings:
+--------
+string is a either single charcter or group of charcters enclosed by a single or double or triple
+quotes.
+Accessing charcters of the string:
+----------------------------------
+
+1.index:
+---------
+Two types of index	
+	1.+ve index
+	2.-ve index
+	
+Eg:
+s='ABCDEFG'
+print(s[3])
+print(s[-2])
+
+output:
+D
+F
+
+Eg:
+s='ABCDEFG'
+print(s[300])
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print(s[300])
+IndexError: string index out of range
+Eg:
+s="ABCDEFGH"
+for x in s:
+    print(x)
+    
+output:
+A
+B
+C
+D
+E
+F
+G
+H
+eg:
+s="ABCDEFGH"
+i=0
+for x in s:
+    print("{} postive index is {}".format(x,i))
+    i+=1
+ 
+output:
+A postive index is 0
+B postive index is 1
+C postive index is 2
+D postive index is 3
+E postive index is 4
+F postive index is 5
+G postive index is 6
+H postive index is 7 
+
+Eg:
+s="ABCDEFGH"
+i=0
+for x in s:
+    print("{} negative index is {}".format(x,i-len(s)))
+    i+=1
+
+output:
+A negative index is -8
+B negative index is -7
+C negative index is -6
+D negative index is -5
+E negative index is -4
+F negative index is -3
+G negative index is -2
+H negative index is -1
+
+Eg:
+s="ABCDEFGH"
+i=0
+for x in s:
+    print("{} postive  index is {} and negative index is {}".format(x,i,i-len(s)))
+    i+=1
+
+output:
+A postive  index is 0 and negative index is -8
+B postive  index is 1 and negative index is -7
+C postive  index is 2 and negative index is -6
+D postive  index is 3 and negative index is -5
+E postive  index is 4 and negative index is -4
+F postive  index is 5 and negative index is -3
+G postive  index is 6 and negative index is -2
+H postive  index is 7 and negative index is -1
+
+slice operator:
+--------------
+syntax:
+-------
+s[begin:end]
+
+begin value to end value -1
+
+default begin value is 0
+default end vsalue is len(string)-1
+Eg:
+s="ABCDEFGH"
+print(s[2:6])
+print(s[2:])
+print(s[:6])
+
+output:
+CDEF
+CDEFGH
+ABCDEF
+
+
+s[begin:end:step]
+------------------
+default begin value is 0
+default end vsalue is len(string)-1
+default step value is 1
+
+step value is postive:
+----------------------
+1.Forward direction ---->left to right 
+2.begin to end -1
+
+step value is negative:
+----------------------
+1.Backward direction --->right to left
+2.begin to end +1
+
+eg:
+s="ABCDEFGHIJ"
+print(s)
+print(len(s))
+
+output:
+ABCDEFGHIJ
+10
+
+eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[1:6:2])#BtoF---->BDF
+
+output:
+ABCDEFGHIJ
+BDF
+
+Eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[::1])
+
+output:
+ABCDEFGHIJ
+ABCDEFGHIJ
+
+eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[::-1])
+
+output:
+ABCDEFGHIJ
+JIHGFEDCBA
+
+eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[3:7:-1])
+
+output:
+ABCDEFGHIJ
+
+Eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[7:4:-1])
+
+output:
+ABCDEFGHIJ
+HGF
+
+Eg:
+s="ABCDEFGHIJ"
+print(s)
+print(s[0:1000:1])
+
+output:
+ABCDEFGHIJ
+ABCDEFGHIJ
+
+Mathematical operations on strings :
+-----------------------------------
++   for concatination
+*   for repeat
+Eg:
+s1="hello"
+s2="How are you"
+print(s1+s2)
+
+output:
+helloHow are you
+
+eg:
+s1="hello"
+s2=4
+print(s1*s2)
+
+output:
+hellohellohellohello
+
+
+Membership operators on strings:
+---------------------------------
+in
+not in
+
+Eg:
+s="ABCDEFGHIJ"
+print("D" in s)
+print("EFG" in s)
+
+print("D" not in s)
+print("EFG" not in s)
+
+
+output:
+True
+True
+False
+False
+
+Removing spaces:
+----------------
+1.lstrip()
+2.rstrip()
+3.strip()
+Eg:
+city=input("Enter your city name:")
+if city=="Hyd":
+    print("Services are available")
+else:
+    print("No serbices")
+output:
+Enter your city name:Hyd
+Services are available
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:  Hyd
+No serbices
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:Hyd
+No serbices
+
+Eg:
+city=input("Enter your city name:")
+if city.lstrip()=="Hyd":
+    print("Services are available")
+else:
+    print("No serbices")
+output:
+Enter your city name:Hyd
+No serbices
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:  Hyd
+Services are available
+
+Eg:
+city=input("Enter your city name:")
+if city.rstrip()=="Hyd":
+    print("Services are available")
+else:
+    print("No serbices")
+
+output:
+Enter your city name:   Hyd
+No serbices
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:Hyd
+Services are available
+
+eg:
+city=input("Enter your city name:")
+if city.strip()=="Hyd":
+    print("Services are available")
+else:
+    print("No serbices")
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:Hyd
+Services are available
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:  Hyd
+Services are available
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:Hyd
+Services are available
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter your city name:    Hyd
+Services are available
+
+
+count():
+--------
+To count charcters of given string 
+
+eg:
+s="ABCDAB"
+print(s)
+print(s.count("A"))
+print(s.count("B"))
+print(s.count("C"))
+print(s.count("D"))
+
+Output:
+ABCDAB
+2
+2
+1
+1
+Eg:
+s="ABCDABABCxyzABC"
+print(s)
+print(s.count("ABC"))
+print(s.count("xyz"))
+
+output:
+ABCDABABCxyzABC
+3
+1
+
+
+replace():
+----------
+Eg:
+s="ABCDABCDABCD"
+print(s)
+s2=s.replace("A","Z")
+print(s2)
+
+output:
+ABCDABCDABCD
+ZBCDZBCDZBCD
+
+Eg:
+s="ABCDABCDABCD"
+print(s)
+s2=s.replace("AB","12")
+print(s2)
+
+output:
+ABCDABCDABCD
+12CD12CD12CD
+
+split():
+--------
+s="Hello How are you"
+s1=s.split()
+print(s1)
+print(type(s1))
+
+output:
+['Hello', 'How', 'are', 'you']
+<class 'list'>
+
+Eg:
+s="Hello,How,are,you"
+s1=s.split(',')
+print(s1)
+print(type(s1))
+
+
+output:
+['Hello', 'How', 'are', 'you']
+<class 'list'>
+Eg:
+s="Hello,How,are,you"
+s1=s.split(',')
+print(s1)
+print(type(s1))
+for x in s1:
+    print(x)
+
+output:
+['Hello', 'How', 'are', 'you']
+<class 'list'>
+Hello
+How
+are
+you
+
+Eg:
+s="Hello,How,are,you"
+s1=s.split(',')
+print(s1)
+print(type(s1))
+for x in s1:
+    print(x)
+    for y in x:
+        print(y)
+
+output:
+['Hello', 'How', 'are', 'you']
+<class 'list'>
+Hello
+H
+e
+l
+l
+o
+How
+H
+o
+w
+are
+a
+r
+e
+you
+y
+o
+u
+
+Eg:
+d='05-04-2022'
+print(d)
+l=d.split('-')
+print(l)
+print(type(l))
+
+output:
+05-04-2022
+['05', '04', '2022']
+<class 'list'>
+
+
+join():
+------
+syntax:
+	''.join(s)
+Eg:
+s="SUN MON TUE WED"
+s1=s.split()
+print(s1)
+print(type(s1))
+s2="".join(s1)
+print(s2)
+print(type(s2))
+s3=" ".join(s1)
+print(s3)
+s4="-".join(s1)
+print(s4)
+
+output:
+['SUN', 'MON', 'TUE', 'WED']
+<class 'list'>
+SUNMONTUEWED
+<class 'str'>
+SUN MON TUE WED
+SUN-MON-TUE-WED
+
+change case of string:
+----------------------
+1.upper case ------------>s.upper()
+2.lower case-------------->s.lower()
+3.swap case -------------->s.swapcase()
+4.title case-------------->s.title()
+5.captilize --------------->s.captilize()
+Eg:
+s1="hello world"
+print(s1.upper())
+s2="HELLO WORLD"
+print(s2.lower())
+s3="heLLo WorlD"
+print(s3.swapcase())
+s4="python programing is very easy"
+print(s4.title())
+print(s4.capitalize())
+
+output:
+HELLO WORLD
+hello world
+HEllO wORLd
+Python Programing Is Very Easy
+Python programing is very easy
+
+Eg:
+user_name=input("Enter User Name:")
+pass_word=input("Enter Pass Word:")
+
+if user_name=="jagan" and pass_word=="mohan":
+    print("Welcome:",user_name)
+else:
+    print("Invalid User")
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:xyz
+Enter Pass Wordxyz
+Invalid User
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:jagan
+Enter Pass Word:12345
+Invalid User
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:jagan
+Enter Pass Word:Mohan
+Invalid User
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:Jagan
+Enter Pass Word:mohan
+Invalid User
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:jagan
+Enter Pass Word:mohan
+Welcome: jagan
+
+
+Eg:
+user_name=input("Enter User Name:")
+pass_word=input("Enter Pass Word:")
+
+if user_name.lower()=="jagan" and pass_word=="mohan":
+    print("Welcome:",user_name)
+else:
+    print("Invalid User")
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:xyz
+Enter Pass Word:xyz
+Invalid User
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:JAGAN
+Enter Pass Word:mohan
+Welcome: JAGAN
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:jagan
+Enter Pass Word:mohan
+Welcome: jagan
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter User Name:JagAN
+Enter Pass Word:mohan
+Welcome: JagAN
+
+startswith():
+-------------
+Eg:
+s="Python is easy"
+print(s.startswith("P"))
+print(s.startswith("Z"))
+print(s.startswith("Python"))
+print(s.startswith("p"))
+
+output:
+True
+False
+True
+False
+
+endswith():
+-----------
+eg:
+s="Python is easy"
+print(s.endswith("y"))
+print(s.endswith("easy"))
+print(s.endswith('w'))
+
+output:
+True
+True
+False
+
+checking type of charcters present in a given string:
+-----------------------------------------------------
+1.isalnum():
+------------
+If given string contains alphanumeric data (atoz,AtoZ,0to9) isalnum() returns True
+otherwise returns False
+Eg:
+s1="12345"
+print(s1.isalnum())
+s2="abcdABCD"
+print(s2.isalnum())
+s3="123ABCDabcd"
+print(s3.isalnum())
+s4="ABCD123@456"
+print(s4.isalnum())
+
+output:
+True
+True
+True
+False
+
+2.isalpha():
+-----------
+if given string contains only alpha data (atoZ,AtoZ) isalpha() returns True 
+otherwise it returns False
+Eg:
+s1="ABCD"
+print(s1.isalpha())
+s2="abcd"
+print(s2.isalpha())
+s3="ABCD123"
+print(s3.isalpha())
+
+output:
+True
+True
+False
+
+3.islower():
+-----------
+It checking given string contains data is lower case data or not
+
+Eg:
+s1="abcd"
+print(s1.islower())
+s2="ABCD"
+print(s2.islower())
+
+output:
+True
+False
+
+4.isupper():
+-------------
+It checking given string contains data is upper case data or not 
+
+Eg:
+s1="abcd"
+print(s1.isupper())
+s2="ABCD"
+print(s2.isupper())
+
+output:
+False
+True
+
+5.isdigit():
+-----------
+It is checking given data is numeric or not
+eg:
+s1="1234"
+print(s1.isdigit())
+s2="abcd1234"
+print(s2.isdigit())
+
+output:
+True
+False
+6.istitle():
+-----------
+it checks given string is title case or not
+
+Eg:
+s1="Hello World"
+print(s1.istitle())
+s2="hello world"
+print(s2.istitle())
+
+output:
+True
+False
+
+
+7.isspace():
+-----------
+it checking given string data is spaces or not
+Eg:
+s1="ABC  DEF"
+print(s1.isspace())
+s2="  "
+print(s2.isspace())
+
+output:
+False
+True
+Example:
+s=input("Enter Data:")
+if s.isalnum():
+    if s.isalpha():
+        if s.islower():
+            print("It is alpha data with lower case")
+        else:
+            print("It is alpha data with  Upper case")
+    elif s.isdigit():
+        print("It is digit")
+    else:
+        print("It is alphanumeric")
+elif s.isspace():
+    print("It is space data")
+else:
+    print("It is special charcter or combination of alphanumeric and special charcters")
+
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:@#$
+It is special charcter or combination of alphanumeric and special charcters
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:
+It is space data
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:ABCD1234
+It is alphanumeric
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:12345
+It is digit
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:ABCD
+It is alpha data with  Upper case
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Data:abcd
+It is alpha data with lower case
+
+Reverse string:
+--------------
+Eg:
+s="ABCDEFGH"
+print(s[::-1])
+output:
+HGFEDCBA
+
+Eg:
+s="ABCDEFGH"
+r=reversed(s)
+print(r)
+print(type(r))
+l=[]
+for x in r:
+    l.append(x)
+print(l)
+a=''.join(l)
+print(a)
+
+output:
+<reversed object at 0x00000166588AE7B8>
+<class 'reversed'>
+['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']
+HGFEDCBA
+
+Eg:
+s="ABCDEFGH"
+s1=""
+i=len(s)-1#7
+while i>=0:       #7>=0        6>=0                0>=0                          -1>=0
+    s1=s1+s[i]    #s1=""+H=H   s1="H"+"G"="HG"      s1="HGFEDCB"+"A"="HGFEDCBA"
+    i=i-1         #i=7-1=6      i=6-1=5              i=0-1=-1
+print(s1)
+
+output:
+HGFEDCBA
+
+Eg:
+s1="ABDDCCCAA"
+print(s1)
+s2=set(s1)
+print(s2)
+
+output:
+ABDDCCCAA
+{'C', 'D', 'B', 'A'}
+
+Eg:
+s1="ABDDCCCAA"
+s2=''
+for ch in s1:
+    if ch not in s2:
+        s2=s2+ch
+print(s2)
+
+output:
+ABDC
+
+
+List Data type:
+---------------
+1.Insertion order is preserved
+2.Duplicates are allowed
+3.Hetrogenious data allowed
+4.List is Dynamic
+5.List is mutable.
+6.List represent using []
+
+creation of list:
+-----------------
+1.To create empty list
+l=[]  
+Eg:
+l=[]
+print(type(l))
+print(l)
+
+output:
+<class 'list'>
+[]
+
+Eg:
+l=list()
+print(l)
+print(type(l))
+
+output:
+[]
+<class 'list'>
+2.To create a list with specified elements
+l=[1,2,3,4,5]
+
+3.to create list by dynamic input
+
+eg:
+l=eval(input("Enter a List:"))
+print(l)
+print(type(l))
+output:
+Enter a List:[1,2,3,4,5,6]
+[1, 2, 3, 4, 5, 6]
+<class 'list'>
+
+4.By using list()
+
+eg:
+l=list(("A","B","C","D"))
+print(l)
+print(type(l))
+
+output:
+['A', 'B', 'C', 'D']
+<class 'list'>
+
+5.By using split()
+Eg:
+s="Hello how are you".split()
+print(s)
+print(type(s))
+
+output:
+['Hello', 'how', 'are', 'you']
+<class 'list'>
+
+Accessing elements of list:
+--------------------------
+1.index
+2.slice 
+
+Traversing of List:
+-------------------
+we can access elements of LIst sequentialy
+
+1.By using for loop:
+--------------------
+Eg:
+l=["A","B","C","D"]
+for x in l:
+    print(x)
+output:
+A
+B
+C
+D
+2.By using for while loop:
+------------------------
+Eg:
+l=["A","B","C","D"]
+i=0
+while i<len(l):
+    print(l[i])
+    i=i+1
+output:
+A
+B
+C
+D
+
+
++ and * operator on list:
+---------------------------
+eg:
+l1=["A","B","C","D"]
+l2=[1,2,3,4]
+print(l1+l2)
+
+output:
+['A', 'B', 'C', 'D', 1, 2, 3, 4]
+
+eg:
+l1=["A","B","C","D"]
+print(l1*4)
+
+output:
+['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D']
+
+== and !=
+----------
+Eg:
+l1=["A","B","C","D"]
+l2=["A","B","C","D"]
+l3=["A","C","B","D"]
+l4=["A","B","C","D","E"]
+print(l1==l2)
+print(l1==l3)
+print(l1==l4)
+
+output:
+True
+False
+False
+
+Eg:
+l1=["A","B","C","D"]
+l2=["A","B","C","D"]
+l3=["A","C","B","D"]
+l4=["A","B","C","D","E"]
+print(l1!=l2)
+print(l1!=l3)
+print(l1!=l4)
+
+output:
+False
+True
+True
+
+
+Membership operators:
+---------------------
+eg:
+l1=["A","B","C","D"]
+print("C" in l1)
+print("Z" in l1)
+print("C" not in l1)
+print("Z" not in l1)
+
+output:
+True
+False
+False
+True
+
+Methods in list:
+----------------
+len():
+------
+Eg:
+l1=["A","B","C","D"]
+print(len(l1))
+
+output:
+4
+
+sorted():
+-------
+eg:
+l=[50,40,20,70,100,200,150,120,10]
+print(l)
+print(sorted(l))
+
+output:
+[50, 40, 20, 70, 100, 200, 150, 120, 10]
+[10, 20, 40, 50, 70, 100, 120, 150, 200]
+
+eg:
+l=[50,40,20,70,100,200,150,120,10]
+#sorted(iterable, key=key, reverse=reverse)
+print(l)
+print(sorted(l,reverse=True))
+
+output:
+[50, 40, 20, 70, 100, 200, 150, 120, 10]
+[200, 150, 120, 100, 70, 50, 40, 20, 10]
+
+
+count():
+-------
+Eg:
+l=[50,40,20,70,100,200,150,120,10,50,20,10,100,70,1,2,3]
+print(l.count(50))
+print(l.count(20))
+print(l.count(1))
+
+output:
+2
+2
+1
+
+
+
+index():
+--------
+eg:
+l=[10,20,30,40,50,60]
+print(l)
+print(l[3])
+print(l.index(40))
+print(l.index(60))
+
+output:
+[10, 20, 30, 40, 50, 60]
+40
+3
+5
+Eg:
+l=[10,20,30,40,50,60]
+print(l)
+
+print(l.index(140))
+
+
+output:
+[10, 20, 30, 40, 50, 60]
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(l.index(140))
+ValueError: 140 is not in list
+
+
+eg:
+l=[10,20,30,40,50]
+print(l)
+x=int(input("Enter the value to find it's index:"))
+if x in l:
+    print("{} present at index {}".format(x,l.index(x)))
+    
+else:
+    print("Element is Not found")
+    
+output:
+[10, 20, 30, 40, 50]
+Enter the value to find it's index:20
+20 present at index 1
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+[10, 20, 30, 40, 50]
+Enter the value to find it's index:50
+50 present at index 4
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+[10, 20, 30, 40, 50]
+Enter the value to find it's index:150
+Element is Not found  
+
+append():
+--------
+
+eg:
+l=[]
+print(l)
+l.append(100)
+print(l)
+l.append("A")
+print(l)
+l.append("Hello")
+print(l)
+
+
+output:
+[]
+[100]
+[100, 'A']
+[100, 'A', 'Hello']
+Eg:
+l=[]
+for x in range(1,101):
+    if x%10==0:
+        l.append(x)
+print(l)
+    
+output:
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+insert():
+--------
+
+synatx:
+   l.insert(index,element)
+eg:
+l=[10,20,30,40,50,60]
+l.append(70)
+print(l)
+l.insert(2,200)
+print(l)
+
+output:
+[10, 20, 30, 40, 50, 60, 70]
+[10, 20, 200, 30, 40, 50, 60, 70]
+
+extend():
+----------
+eg:
+l1=[10,20,30,40,50,60]
+l2=[1,2,3,4,5,6,7,8,9]
+print(l1+l2)
+print(l1)
+print(l2)
+l1.extend(l2)
+print(l1)
+print(l2)
+
+
+output:
+[10, 20, 30, 40, 50, 60, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[10, 20, 30, 40, 50, 60]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[10, 20, 30, 40, 50, 60, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+remove():
+---------
+Eg:
+l1=[10,20,30,40,50,60]
+print(l1)
+l1.remove(50)
+print(l1)
+
+output:
+[10, 20, 30, 40, 50, 60]
+[10, 20, 30, 40, 60]
+
+pop():
+------
+eg:
+l1=[10,20,30,40,50,60]
+print(l1)
+print(l1.remove(50))
+print(l1)
+print(l1.pop())
+print(l1)
+print(l1.pop())
+print(l1)
+
+
+output:
+[10, 20, 30, 40, 50, 60]
+None
+[10, 20, 30, 40, 60]
+60
+[10, 20, 30, 40]
+40
+[10, 20, 30]
+
+pop(index):
+-----------
+
+Eg:
+l1=[10,20,30,40,50,60]
+print(l1)
+print(l1.pop(2))
+print(l1)
+
+print(l1.remove(10))
+print(l1)
+
+output:
+[10, 20, 30, 40, 50, 60]
+30
+[10, 20, 40, 50, 60]
+None
+[20, 40, 50, 60]
+
+clear():
+-----------
+
+eg:
+l1=[10,20,30,40,50,60]
+print(l1)
+l1.clear()
+print(l1)
+
+output:
+[10, 20, 30, 40, 50, 60]
+[]
+
+ordering elements ofgiven list:
+--------------------------------
+reverse():
+--------
+l1=[10,20,30,40,50,60]
+print(l1)
+l1.reverse()
+print(l1)
+
+output:
+[10, 20, 30, 40, 50, 60]
+[60, 50, 40, 30, 20, 10]
+
+
+sort()
+------
+Eg:
+l=[20,5,15,0,10]
+print(l)
+l.sort()
+print(l)
+
+output:
+[20, 5, 15, 0, 10]
+[0, 5, 10, 15, 20]
+
+
+eg:
+l=["X","Q","A","H","B"]
+print(l)
+l.sort()
+print(l)
+
+
+output:
+['X', 'Q', 'A', 'H', 'B']
+['A', 'B', 'H', 'Q', 'X']
+
+Eg:
+l=["X","Q","A","H","B"]
+print(l)
+l.sort()
+print(l)
+l.sort(reverse=True)
+print(l)
+
+output:
+['X', 'Q', 'A', 'H', 'B']
+['A', 'B', 'H', 'Q', 'X']
+['X', 'Q', 'H', 'B', 'A']
+
+
+Aliasing and clonening:
+-----------------------
+Aliasing means to create new reffernce varaiable to existing object
+
+clonening menas creating exactly duplicate independent object
+
+Eg:
+l1=[1,2,3,4,5,6,7,8,9]
+l2=l1
+l3=l2
+print(l1)
+print(id(l1))
+print(l2)
+print(id(l2))
+print(l3)
+print(id(l3))
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2315342485576
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2315342485576
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2315342485576
+
+Eg:
+l1=[1,2,3,4,5,6,7,8,9]
+l2=l1
+l3=l2
+print(l1)
+print(id(l1))
+print(l2)
+print(id(l2))
+print(l3)
+print(id(l3))
+
+l1[1]=200
+print(l1)
+
+print(l2)
+print(l3)
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2048132749384
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2048132749384
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2048132749384
+[1, 200, 3, 4, 5, 6, 7, 8, 9]
+[1, 200, 3, 4, 5, 6, 7, 8, 9]
+[1, 200, 3, 4, 5, 6, 7, 8, 9]
+
+
+Two ways are there to create cloned object:
+-------------------------------------------
+1.By using slice operator:
+-------------------------
+Eg:
+l1=[1,2,3,4,5,6,7,8,9]
+l2=l1[:]
+print(l1)
+print(id(l1))
+print(l2)
+print(id(l2))
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+1740732274760
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+1740732275784
+2.By using copy():
+-------------------
+
+Eg:
+l1=[1,2,3,4,5,6,7,8,9]
+l2=l1.copy()
+print(l1)
+print(id(l1))
+print(l2)
+print(id(l2))
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2402032261192
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2402032262216
+
+eg:
+l1=[1,2,3,4,5,6,7,8,9]
+l2=l1.copy()
+print(l1)
+print(id(l1))
+print(l2)
+print(id(l2))
+
+l1[3]=400
+print(l1)
+print(l2)
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2448383055944
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+2448383056968
+[1, 2, 3, 400, 5, 6, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+List comprehention:
+-------------------
+
+Eg:
+l=[]
+for x in range(1,11):
+    l.append(x*x)
+print(l)
+
+output:
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+Eg:
+l1=[x for x in range(1,11)]
+print(l1)
+
+output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+eg:
+l1=[x*x for x in range(1,11)]
+print(l1)
+
+output:
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+Eg:
+l1=[]
+for x in range(1,11):
+    if x%2==0:
+        l1.append(x)
+        
+print(l1)
+
+output:
+[2, 4, 6, 8, 10]
+
+eg:
+l1=[x for x in range(1,11)  if x%2==0]
+print(l1)
+output:
+[2, 4, 6, 8, 10]
+Eg:
+s="the quick brown fox jumps over a lazy dog".split()
+print(s)
+l=[[word.upper(),len(word)] for word in s]
+print(l)
+
+output:
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'a', 'lazy', 'dog']
+[['THE', 3], ['QUICK', 5], ['BROWN', 5], ['FOX', 3], ['JUMPS', 5], 
+['OVER', 4], ['A', 1], ['LAZY', 4], ['DOG', 3]]
+
+Eg:
+s="the quick brown fox jumps over a lazy dog".split()
+print(s)
+l=[[word.capitalize(),len(word)] for word in s]
+print(l)
+
+output:
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'a', 'lazy', 'dog']
+[['The', 3], ['Quick', 5], ['Brown', 5], ['Fox', 3], ['Jumps', 5], ['Over', 4], ['A', 1], ['Lazy', 4], ['Dog', 3]]
+
+eg:
+v=['a','e','i','o','u']
+w=input("Enter Word:")
+r=[]
+for ch in w:
+    if ch in v:
+        if ch not in r:
+            r.append(ch)
+print(r)
+print("Number of vowels in word:",len(r))
+       
+output:
+Enter Word:Animal
+['i', 'a']
+Number of vowels in word: 2
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+Enter Word:Aeroplane
+['e', 'o', 'a']
+Number of vowels in word: 3
+
+tuple:
+-----
+1.tuple preserved order
+2.tuple allows the duplicates
+3.tuple allows hetrogenious data
+4.Index and slice are applicable
+5.tuple is immutable
+6.tuple represent by ()
+
+Creation of tuples:
+---------------------
+1.single value tuple
+Eg:
+t=10
+print(t)
+print(type(t))
+
+output:
+10
+<class 'int'>
+Eg:
+t=10,
+print(t)
+print(type(t))
+
+output:
+(10,)
+<class 'tuple'>
+2.
+t=(10,20,30,40)
+print(t)
+print(type(t))
+
+output:
+(10, 20, 30, 40)
+<class 'tuple'>
+
+eg:
+t=10,20,30,40,50
+print(t)
+print(type(t))
+
+output:
+(10, 20, 30, 40, 50)
+<class 'tuple'>
+3.tuple()
+l=[10,20,30,40,50]
+print(l)
+t=tuple(l)
+print(t)
+print(type(t))
+
+output:
+[10, 20, 30, 40, 50]
+(10, 20, 30, 40, 50)
+<class 'tuple'>
+4.eval()
+eg:
+t=eval(input("Enter Tuple:"))
+print(t)
+print(type(t))
+
+output:
+Enter Tuple:(1,2,3,4,5,6)
+(1, 2, 3, 4, 5, 6)
+<class 'tuple'>
+
+index and slice:
+-----------------
+index:
+-------
+Eg:
+t=(10,20,30,40,50)
+print(t)
+print(t[2])
+print(t[-1])
+
+output:
+(10, 20, 30, 40, 50)
+30
+50
+slice:
+------
+
+eg:
+t=(10,20,30,40,50,60,70,80,90)
+print(t)
+print(t[2:7])
+
+output:
+(10, 20, 30, 40, 50, 60, 70, 80, 90)
+(30, 40, 50, 60, 70)
+
+
+function sin tuple:
+-------------------
+1.len()
+eg:
+t=(10,20,30,40,50,60,70,80,90)
+print(t)
+print(len(t))
+
+output:
+(10, 20, 30, 40, 50, 60, 70, 80, 90)
+9
+2.index():
+---------
+eg:
+t=(10,20,30,40,50,60,70,80,90,40)
+print(t)
+print(t.index(40))
+print(t.index(90))
+print(t.index(40))
+
+
+output:
+(10, 20, 30, 40, 50, 60, 70, 80, 90, 40)
+3
+8
+3
+
+reverse():
+-----------
+eg:
+l=[10,20,30,40]
+print(l)
+print(id(l))
+l.reverse()
+print(l)
+print(id(l))
+
+output:
+[10, 20, 30, 40]
+2545040726088
+[40, 30, 20, 10]
+2545040726088
+
+eg:
+t=(10,20,30,40)
+t.reverse()
+print(t)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    t.reverse()
+AttributeError: 'tuple' object has no attribute 'reverse'
+reversed():
+----------
+eg:
+t1=(10,20,30,40)
+print(t1)
+print(id(t1))
+t2=reversed(t1)
+print(t2)
+print(id(t2))
+output:
+(10, 20, 30, 40)
+2841707070552
+<reversed object at 0x00000295A352EB00>
+2841713502976
+
+sort():
+------
+eg:
+l=[20,10,30,50,40]
+print(l)
+print(id(l))
+l.sort()
+print(l)
+print(id(l))
+
+
+output:
+[20, 10, 30, 50, 40]
+2068753913928
+[10, 20, 30, 40, 50]
+2068753913928
+
+eg:
+l=(20,10,30,50,40)
+print(l)
+print(id(l))
+l.sort()
+
+output:
+(20, 10, 30, 50, 40)
+2209057329752
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    l.sort()
+AttributeError: 'tuple' object has no attribute 'sort'
+
+sorted():
+--------
+eg:
+t1=(20,10,30,50,40)
+print(t1)
+print(id(t1))
+t2=sorted(t1)
+print(t2)
+print(id(t2))
+
+output:
+(20, 10, 30, 50, 40)
+1425937873208
+[10, 20, 30, 40, 50]
+1425938095176
+
+min() and max():
+---------------
+eg:
+t1=(20,10,30,50,40)
+print(t1)
+print(min(t1))
+print(max(t1))
+
+output:
+(20, 10, 30, 50, 40)
+10
+50
+
+eg:
+t1=[20,10,30,50,40]
+print(t1)
+print(min(t1))
+print(max(t1))
+
+output:
+[20, 10, 30, 50, 40]
+10
+50
+
+Note:  Element manuplication not there in tuple because tuple is immutable
+
+packing and unpacking of tuple:
+---------------------------------
+Eg:
+a=10
+b=20
+c=30
+d=40
+t=(a,b,c,d)
+print(t)
+
+output:
+(10, 20, 30, 40)
+
+eg:
+t=(10, 20, 30, 40)
+a,b,c,d=t
+print(a)
+print(b)
+print(c)
+print(d)
+
+output:
+10
+20
+30
+40
+
+eg:
+t=(10, 20, 30, 40)
+a,b=t
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    a,b=t
+ValueError: too many values to unpack (expected 2)
+
+eg:
+t=(10, 20, 30, 40)
+a,*b=t
+print(a)
+print(b)
+
+output:
+10
+[20, 30, 40]
+
+eg:
+t=(10, 20, 30, 40,50,60)
+a,b,*c=t
+print(a)
+print(b)
+print(c)
+
+output:
+10
+20
+[30, 40, 50, 60]
+
+
+tuple comprehention:
+---------------------
+eg:
+t=(10, 20, 30, 40,50,60)
+for x in t:
+    print(x*x)
+output:
+100
+400
+900
+1600
+2500
+3600
+
+eg:
+t=(10, 20, 30, 40,50,60)
+t1=(x*x for x in t)
+print(t1)
+
+output:
+<generator object <genexpr> at 0x0000025FE87B3A40>
+eg:
+t=(10, 20, 30, 40,50,60)
+t1=(x*x for x in t)
+print(t1)
+
+for x in t1:
+    print(x)
+output:
+<generator object <genexpr> at 0x00000141D9B839E8>
+100
+400
+900
+1600
+2500
+3600
+
+eg:
+l=(x for x in range(999999999))
+print(l)
+
+output:
+<generator object <genexpr> at 0x000001F903563A40>
+
+eg:
+l=(x for x in range(999999999))
+print(l)
+for x in l:
+    print(x)
+Set data type:
+-----------------
+1.duplicates are not allowed
+2.ordere is not preserved
+3.index an slice not applicable
+4.set represent by {1,2,3}
+5.set is mutable
+6.Heterogeneous data allowed
+7.union.intersection and difference operations we perform
+ creation of set:
+ ------------------
+
+1. Empty set 
+eg:
+s={}
+print(s)
+print(type(s))
+
+
+output:
+{}
+<class 'dict'>
+
+eg:
+s=set()
+print(s)
+print(type(s))
+
+output:
+set()
+<class 'set'>
+
+
+2.
+s={1,2,3,4,5,6}
+print(s)
+
+output:
+{1, 2, 3, 4, 5, 6}
+
+3.set()
+
+eg:
+l=[1,2,3,4,5,6]
+s=set(l)
+print(s)
+
+output:
+{1, 2, 3, 4, 5, 6}
+
+Eg:
+l="Hello world"
+s=set(l)
+print(s)
+
+output:
+{' ', 'd', 'o', 'e', 'l', 'w', 'H', 'r'}
+
+4.dynamic input
+
+eg:
+s=eval(input(" eneter set:"))
+print(s)
+
+output:
+ eneter set:{1,2,3,4,5,"A"}
+{1, 2, 3, 4, 5, 'A'}
+
++ and * operators on set:
+--------------------------
+Eg:
+
+s1={1, 2, 3, 4, 5}
+s2={6,7,8,9}
+
+print(s1+s2)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    print(s1+s2)
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+
+eg:
+
+s1={1, 2, 3, 4, 5}
+s2=2
+print(s1*2)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    print(s1*2)
+TypeError: unsupported operand type(s) for *: 'set' and 'int'
+
+functions in set:
+-----------------
+1.len()
+Eg:
+s1={1, 2, 3, 4, 5}
+print(len(s1))
+
+output:
+5
+2.add()
+--------
+eg:
+s1={1, 2, 3, 4, 5}
+print(s1)
+s1.add(60)
+print(s1)
+s1.add("A")
+print(s1)
+
+output:
+{1, 2, 3, 4, 5}
+{1, 2, 3, 4, 5, 60}
+{1, 2, 3, 4, 5, 'A', 60}
+3.remove()
+----------
+
+Eg:
+s1={1, 2, 3, 4, 5, 'A', 60}
+print(s1)
+s1.remove(4)
+print(s1)
+s1.remove(60)
+print(s1)
+
+output:
+{1, 2, 3, 4, 5, 60, 'A'}
+{1, 2, 3, 5, 60, 'A'}
+{1, 2, 3, 5, 'A'}
+
+update():
+--------
+Eg:
+l=[1,2,3,4]
+s={5,6,7,8}
+print(s)
+s.update(l)
+print(s)
+
+output:
+{8, 5, 6, 7}
+{1, 2, 3, 4, 5, 6, 7, 8}
+
+
+discard():
+----------
+eg:
+s1={1, 2, 3, 4, 5, 'A', 60}
+print(s1)
+s1.remove(4)
+print(s1)
+s1.remove(160)
+print(s1)
+
+output:
+{1, 2, 3, 4, 5, 'A', 60}
+{1, 2, 3, 5, 'A', 60}
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    s1.remove(160)
+KeyError: 160
+
+eg:
+s1={1, 2, 3, 4, 5, 'A', 60}
+print(s1)
+s1.discard(4)
+print(s1)
+s1.discard(160)
+print(s1)
+
+output:
+{1, 2, 3, 4, 5, 'A', 60}
+{1, 2, 3, 5, 'A', 60}
+{1, 2, 3, 5, 'A', 60}
+pop():
+----
+eg:
+s1={1, 2, 3, 4, 5, 'A', 60}
+print(s1)
+print(s1.pop())
+print(s1)
+print(s1.pop())
+print(s1)
+print(s1.pop())
+print(s1)
+
+output:
+{1, 2, 3, 4, 5, 'A', 60}
+1
+{2, 3, 4, 5, 'A', 60}
+2
+{3, 4, 5, 'A', 60}
+3
+{4, 5, 'A', 60}
+
+clear():
+-------
+
+Eg:
+s1={1, 2, 3, 4, 5, 'A', 60}
+print(s1)
+print(s1.clear())
+print(s1)
+
+output:
+{1, 2, 3, 4, 5, 'A', 60}
+None
+set()
+
+
+set operation:
+----------------
+1.union()
+------------
+Eg:
+s1={10,20,30,40}
+s2={30,40,50,60}
+s3=s1.union(s2)
+print(s3)
+
+s3=s1 | s2
+print(s3)
+
+output:
+{40, 10, 50, 20, 60, 30}
+{40, 10, 50, 20, 60, 30}
+2.intersection
+---------------
+Eg:
+s1={10,20,30,40}
+s2={30,40,50,60}
+s3=s1.intersection(s2)
+print(s3)
+s3=s1 & s2
+print(s3)
+
+output:
+{40, 30}
+{40, 30}
+
+3.difference:
+-------------
+eg:
+s1={10,20,30,40}
+s2={30,40,50,60}
+s3=s1.difference(s2)
+print(s3)
+
+s3=s1-s2
+print(s3)
+
+output:
+{10, 20}
+{10, 20}
+4.symmetric difference:
+----------------------
+Eg:
+s1={10,20,30,40}
+s2={30,40,50,60}
+s3=s1.symmetric_difference(s2)
+print(s3)
+s3=s1^s2
+print(s3)
+
+output:
+{10, 50, 20, 60}
+{10, 50, 20, 60}
+
+
+set comprehention:
+--------------------
+Eg:
+s1={1,2,3,4,5,6}
+print(s1)
+s2=set()
+for x in s1:
+    s2.add(x)
+print(s2)
+
+output:
+{1, 2, 3, 4, 5, 6}
+{1, 2, 3, 4, 5, 6}
+
+Eg:
+s1={1,2,3,4,5,6}
+print(s1)
+s2=set()
+for x in s1:
+    s2.add(x*x)
+print(s2)
+
+output:
+{1, 2, 3, 4, 5, 6}
+{1, 4, 36, 9, 16, 25}
+
+eg:
+s={x*x for x in range(1,6)}
+print(s)
+
+output:
+{1, 4, 9, 16, 25}
+
+
+
+ 
+Dictionary	 data type:
+-----------------------
+If want to represent group of objects as key value pairs we can go for dictionary data type.
+Eg:
+----
+d={100:"Ramu",200:"Raj",300:"Basha"}
+
+1.dict is key value pairs
+2.Duplicate keys are not allowed but values are duplicated
+3.Insertion ord is not preserved
+4.Index and slice not applicable
+5.Heterogeneous data for keys and values allowed
+6.Dict is mutable
+
+creation of dictionary:
+-------------------------
+1.empty dictionary
+Eg:
+d={}
+print(d)
+print(type(d))
+
+output:
+{}
+<class 'dict'>
+
+Eg:
+d=dict()
+print(d)
+print(type(d))
+
+output:
+{}
+<class 'dict'>
+2.
+eg:
+d={1:"A",2:"B",3:"C"}
+print(d)
+print(type(d))
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+<class 'dict'>
+3.dict()
+eg:
+l=[(100,"A"),(200,"B"),(300,"C")]
+d=dict(l)
+print(d)
+
+output:
+{100: 'A', 200: 'B', 300: 'C'}
+4.dynamic input
+
+eg:
+d=eval(input("Enter dict:"))
+print(d)
+output:
+Enter dict:{1:"A",2:"B",3:"C"}
+{1: 'A', 2: 'B', 3: 'C'}
+Accessing data from dictionary:
+-------------------------------
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d[100])
+print(d[300])
+
+output:
+Ramu
+Basha
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d[400])
+output:
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    print(d[400])
+KeyError: 400
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d)
+key=int(input("Enter Key:"))
+if key in d:
+    print("Its value is :",d[key])
+else:
+    print("Key Not found")
+output:
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+Enter Key:100
+Its value is : Ramu
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+Enter Key:200
+Its value is : Raj
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+Enter Key:300
+Its value is : Basha
+
+C:\Users\jagan\OneDrive\Desktop\Python_sessions>python test.py
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+Enter Key:400
+Key Not found
+
+add or update data in dict:
+----------------------------
+syntax:
+------ 
+      d[key]=value
+	  
+if key alredy available in dict then old value replace with new value
+if key not available alredy in dict with this key and values a new key value pair created in dict.
+
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d)
+d[100]="Raj"
+print(d)
+d[600]="Basha"
+print(d)
+
+output:
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+{100: 'Raj', 200: 'Raj', 300: 'Basha'}
+{100: 'Raj', 200: 'Raj', 300: 'Basha', 600: 'Basha'}
+
+
+del:
+---
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d)
+del d[100]
+print(d)
+
+output:
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+{200: 'Raj', 300: 'Basha'}
+Eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d)
+del d[500]
+output:
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    del d[500]
+KeyError: 500
+eg:
+d={100:"Ramu",200:"Raj",300:"Basha"}
+print(d)
+del d[100],d[300]
+print(d)
+
+output:
+{100: 'Ramu', 200: 'Raj', 300: 'Basha'}
+{200: 'Raj'}
+Eg:
+n=int(input("Enter no of students:"))
+d={}
+for x in range(n):
+    name=input("Enter student name:")
+    marks=int(input("Enter marks:"))
+    d[name]=marks
+
+print(d)
+
+for k,v in d.items():
+    print("Student name:{} Marks:{}".format(k,v))
+    
+output:
+Enter no of students:5
+Enter student name:"Ram"
+Enter marks:80
+Enter student name:"Raj"
+Enter marks:90
+Enter student name:"Khan"
+Enter marks:90
+Enter student name:"Basha"
+Enter marks:60
+Enter student name:"Ragu"
+Enter marks:50
+{'"Ram"': 80, '"Raj"': 90, '"Khan"': 90, '"Basha"': 60, '"Ragu"': 50}
+Student name:"Ram" Marks:80
+Student name:"Raj" Marks:90
+Student name:"Khan" Marks:90
+Student name:"Basha" Marks:60
+Student name:"Ragu" Marks:50n=int(input("Enter no of students:"))
+d={}
+for x in range(n):
+    name=input("Enter student name:")
+    marks=int(input("Enter marks:"))
+    d[name]=marks
+
+print(d)
+
+for k,v in d.items():
+    print("Student name:{} Marks:{}".format(k,v))
+    
+output:
+Enter no of students:5
+Enter student name:"Ram"
+Enter marks:80
+Enter student name:"Raj"
+Enter marks:90
+Enter student name:"Khan"
+Enter marks:90
+Enter student name:"Basha"
+Enter marks:60
+Enter student name:"Ragu"
+Enter marks:50
+
+Student name:"Ram" Marks:80
+Student name:"Raj" Marks:90
+Student name:"Khan" Marks:90
+Student name:"Basha" Marks:60
+Student name:"Ragu" Marks:50
+
+methods in dict:
+----------------
+1.len():
+------
+Eg:
+d={'"Ram"': 80, '"Raj"': 90, '"Khan"': 90, '"Basha"': 60, '"Ragu"': 50}
+print(d)
+print(len(d))
+
+output:
+{'"Ram"': 80, '"Raj"': 90, '"Khan"': 90, '"Basha"': 60, '"Ragu"': 50}
+5
+
+2.d.get(key)
+------------
+
+eg:
+d={1:"A",2:"B",3:"C"}
+print(d)
+print(d[2])
+print(d.get(2))
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+B
+B
+Eg:
+d={1:"A",2:"B",3:"C"}
+print(d)
+print(d[200])
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    print(d[200])
+KeyError: 200
+
+Eg:
+d={1:"A",2:"B",3:"C"}
+print(d)
+print(d.get(200))
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+None
+
+d.get(key,defaultvalue)
+-------------------------
+Eg:
+d={1:"A",2:"B",3:"C"}
+print(d)
+print(d.get(2,"KEY NOT FOUND"))
+print(d.get(200,"KEY NOT FOUND"))
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+B
+KEY NOT FOUND
+d1.update(d2):
+-------------
+Eg:
+d1={1:"A",2:"B",3:"C"}
+d2={11:"AA",22:"BB",33:"CC"}
+print(d1)
+print(d2)
+d1.update(d2)
+print(d1)
+print(d2)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+{11: 'AA', 22: 'BB', 33: 'CC'}
+{1: 'A', 2: 'B', 3: 'C', 11: 'AA', 22: 'BB', 33: 'CC'}
+{11: 'AA', 22: 'BB', 33: 'CC'}
+
+keys():
+------
+Eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+k=d1.keys()
+print(k)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+dict_keys([1, 2, 3])
+
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+for k  in d1.keys():
+    print(k)
+    
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+1
+2
+3
+
+values()
+-------
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+v=d1.values()
+print(v)
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+dict_values(['A', 'B', 'C'])
+
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+for v in d1.values():
+    print(v)
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+A
+B
+C
+
+items()
+--------
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+i=d1.items()
+print(i)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+dict_items([(1, 'A'), (2, 'B'), (3, 'C')])
+
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+for k,v  in d1.items():
+    print(k,"--------------",v)
+    
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+1 -------------- A
+2 -------------- B
+3 -------------- C
+
+pop(key)
+------
+
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+print(d1.pop(2))
+print(d1)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+B
+{1: 'A', 3: 'C'}
+
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+print(d1.pop(200))
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    print(d1.pop(200))
+KeyError: 200
+
+pop(key,defaultvalue):
+----------------------
+Eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+print(d1.pop(3,"This key Not in d1"))
+print(d1)
+print(d1.pop(300,"This key Not in d1"))
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+C
+{1: 'A', 2: 'B'}
+This key Not in d1
+
+d.popitem()
+---------
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+print(d1.popitem())
+print(d1)
+print(d1.popitem())
+print(d1)
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+(3, 'C')
+{1: 'A', 2: 'B'}
+(2, 'B')
+{1: 'A'}
+
+d1.clear()
+---------
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+d1.clear()
+print(d1)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+{}
+
+d.setdefault(k,v)
+------------------
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+d1[2]="X"
+print(d1)
+d1[40]="x"
+print(d1)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+{1: 'A', 2: 'X', 3: 'C'}
+{1: 'A', 2: 'X', 3: 'C', 40: 'x'}
+eg:
+d1={1:"A",2:"B",3:"C"}
+print(d1)
+d1.setdefault(2,"X")
+print(d1)
+d1.setdefault(40,"X")
+print(d1)
+
+output:
+{1: 'A', 2: 'B', 3: 'C'}
+{1: 'A', 2: 'B', 3: 'C'}
+{1: 'A', 2: 'B', 3: 'C', 40: 'X'}
+
+Eg:
+word=input("Enter Word:")
+d={}#{"H":1,"e":1,"l":2,'o':1}
+for ch in word:
+    d[ch]=d.get(ch,0)+1  #d['H']=d.get("H",0)+1=0+1=1 #d["e"]=d.get("e",0)+1=0+1=1#d['l']=d.get("l",0)=0+1=1#d['l']=d.get('l',0)+1=1+1=2
+print(d)
+output:
+Enter Word:Hello
+{'H': 1, 'e': 1, 'l': 2, 'o': 1}
+eg:
+d1=eval(input("Enter dict:"))
+print(d1)
+total=0
+for k,v in d1.items():
+    total=total+v
+print(total)
+
+output:
+Enter dict:{"A":1,"B":2,"C":3}
+{'A': 1, 'B': 2, 'C': 3}
+6
+Eg:
+n=int(input("Enter no of students:"))
+d={}
+for i in range(n):
+    name=input("Name of student:")
+    marks=int(input("Enter marks:"))
+    d[name]=marks
+
+print(d)
+
+for k,v in d.items():
+    print("Name:{},Marks:{}".format(k,v))
+while True:
+   
+    name=input("Enter your Name to check result:")
+    marks=d.get(name,-1)
+    
+    if marks==-1:
+        print("No data found")
+    else:
+        print("Marks of {} are {}".format(name,marks))
+    option=input("You want check one more student result [Yes/No]")
+    if option.lower()=='no':
+        break
+
+print("Thanks for using my application")
+
+output:
+Enter no of students:4
+Name of student:"jagan"
+Enter marks:40
+Name of student:"Ram"
+Enter marks:50
+Name of student:"Raj"
+Enter marks:60
+Name of student:"basha"
+Enter marks:70
+{'"jagan"': 40, '"Ram"': 50, '"Raj"': 60, '"basha"': 70}
+Name:"jagan",Marks:40
+Name:"Ram",Marks:50
+Name:"Raj",Marks:60
+Name:"basha",Marks:70
+Enter your Name to check result:"jagan"
+Marks of "jagan" are 40
+You want check one more student result [Yes/No]yes
+Enter your Name to check result:"Raj"
+Marks of "Raj" are 60
+You want check one more student result [Yes/No]yes
+Enter your Name to check result:"basha"
+Marks of "basha" are 70
+You want check one more student result [Yes/No]yes
+Enter your Name to check result:"Khan"
+No data found
+You want check one more student result [Yes/No]no
+Thanks for using my application
+
+Functions:
+----------
+Need of functions:
+-------------------
+1.code reusablity
+2.Length of code decreses then performance improved
+
+Two types of functions:
+-----------------------
+1.Built in functions:
+---------------------
+Eg:
+	print()
+	id()
+	len()
+	eval()
+	type()
+	int()
+2.user defined functions/customized functions:
+----------------------------------------------
+Based on our requirement we define a function
+
+syntax:
+-----
+
+def function_name():
+	"Doc string"
+	body 
+	return value
+
+function_name()
+
+Function parameters:
+-------------------
+def f1(parameters):#formal parameters
+	--------------
+	------------
+	------------
+f1(Parameters)#actual parameters
+eg:
+def wish():
+    print("Hello")
+
+wish()
+wish()
+wish()
+wish()
+
+output:
+Hello
+Hello
+Hello
+Hello
+
+return statement:
+------------------
+with out return:
+----------------
+if not writing return statement default return value is None
+eg:
+def wish():
+    print("Hello")
+
+x=wish()
+print(x)
+
+output:
+Hello
+None
+
+with return:
+------------
+eg:
+def wish():
+    print("Hello")
+    return "Good Morning!"
+    
+x=wish()
+print(x)
+
+output:
+Hello
+Good Morning!
+
+Eg:
+def total():
+    a=10
+    b=20
+    return 
+
+t=total()
+print(t)
+
+output:
+None
+return multiple values:
+------------------------
+eg:
+def cal(a,b):
+    total=a+b
+    sub=a-b
+    mul=a*b
+    div=a/b
+    fdiv=a//b
+    return total,sub,mul,div,fdiv
+r=cal(20,10)
+print(r)
+print(type(r))
+
+output:
+(30, 10, 200, 2.0, 2)
+<class 'tuple'>
+
+Note: If function returns multiple values in the format of tuple
+
+Types of arguments:
+---------------------
+1.postional arguments:
+----------------------
+1.order of passing of arguments is important otherwise we get wrong result
+2.Number of actual and formal arguments must be same
+
+Eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(10,20)
+print(x)
+output:
+(30, -10)
+
+eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(20,10)
+print(x)
+
+output:
+(30, 10)
+
+eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(20,10,30)
+print(x)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    x=calu(20,10,30)
+TypeError: calu() takes 2 positional arguments but 3 were given
+eg:
+def calu(a,b,c):
+    return a+b,a-b
+x=calu(20,10)
+print(x)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    x=calu(20,10)
+TypeError: calu() missing 1 required positional argument: 'c'
+
+2.key word arguments:
+----------------------
+1.order is not important
+eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(a=10,b=20)
+print(x)
+output:
+(30, -10)
+eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(b=20,a=10)
+print(x)
+output:
+(30, -10)
+eg:
+def calu(a,b):
+    return a+b,a-b
+x=calu(a=20,b=10)
+x1=calu(b=10,a=20)
+print(x)
+print(x1)
+
+output:
+(30, 10)
+(30, 10)
+3.default arguments:
+--------------------
+eg:
+def wish(name):
+    print("Hello:",name)
+wish("jagan")
+
+output:
+Hello: jagan
+eg:
+def wish(name):
+    print("Hello:",name)
+wish()
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    wish()
+TypeError: wish() missing 1 required positional argument: 'name'
+
+eg:
+def wish(name="Guest"):
+    print("Hello:",name)
+wish()
+wish("jagan")
+
+output:
+Hello: Guest
+Hello: jagan
+
+eg:
+def wish(name="Guest"):
+    if name.lower()=="jagan":
+        print("Hello  {} How are you!".format(name))
+    else:
+        print("Hello",name)
+
+wish() 
+wish("Ram")
+wish("JAGAN")       
+        
+ 
+output:
+Hello Guest
+Hello Ram
+Hello  JAGAN How are you! 
+4.variable length arguments:
+------------------------------
+
+eg:
+def calu(a,b):
+    print(a+b)
+calu(10,20)
+
+output:
+30
+eg:
+def calu(a,b):
+    print(a+b)
+calu(10,20,30)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    calu(10,20,30)
+TypeError: calu() takes 2 positional arguments but 3 were given
+
+eg:
+def f1(*n):
+    print(n)
+    print(type(n))
+f1()
+f1(1)
+f1(1,2)
+f1(1,2,3)
+
+output:
+()
+<class 'tuple'>
+(1,)
+<class 'tuple'>
+(1, 2)
+<class 'tuple'>
+(1, 2, 3)
+<class 'tuple'>
+
+eg:
+def total(*n):
+    total=0
+    for x in n:
+        total=total+x
+    print("Total:",total)
+total()
+total(1)
+total(10,20)
+total(10,20,30,40,50)
+
+output:
+Total: 0
+Total: 1
+Total: 30
+Total: 150
+
+5.variable length key word arguments:
+---------------------------------------
+eg:
+def f1(**kwargs):
+    print(kwargs)
+    print(type(kwargs))
+f1()
+f1(A=10,B=20)
+f1(A=10,B=20,C=30)    
+
+output:
+{}
+<class 'dict'>
+{'A': 10, 'B': 20}
+<class 'dict'>
+{'A': 10, 'B': 20, 'C': 30}
+<class 'dict'>
+
+
+Types of variables or scope of varaiables:
+------------------------------------------
+1.Global varaiable
+2.Local varaiable
+
+1.Global varaiable:
+--------------------
+To define varaiable outside of function are known as global varaiable
+the global varaiable we can access any where inside code
+
+2.Local varaiable:
+-----------------
+To define varaiable inside of function are known as local varaiables
+the local variable available only inside of the function
+
+
+eg:
+x=200
+y=400
+def f1():
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+f1()
+
+output:
+100
+20
+200
+400
+
+eg:
+x=200
+y=400
+def f1():
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+f1()
+
+print(x)
+print(y)
+
+output:
+100
+20
+200
+400
+200
+400
+Eg:
+x=200
+y=400
+def f1():
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+f1()
+
+print(x)
+print(y)
+
+print(a)
+print(b)
+
+
+output:
+100
+20
+200
+400
+200
+400
+Traceback (most recent call last):
+  File "test.py", line 15, in <module>
+    print(a)
+NameError: name 'a' is not defined
+
+eg:
+x=200
+y=400
+def f1():
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+def f2():
+    c=1000
+    d=2000
+    print(c)
+    print(d)
+    print(x)
+    print(y)
+f1()
+f2()
+
+output:
+100
+20
+200
+400
+1000
+2000
+200
+400
+
+
+eg:
+x=200
+y=400
+def f1():
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+def f2():
+    c=1000
+    d=2000
+    print(c)
+    print(d)
+    print(x)
+    print(y)
+    print(a)
+f1()
+f2()
+
+output:
+100
+20
+200
+400
+1000
+2000
+200
+400
+Traceback (most recent call last):
+  File "test.py", line 19, in <module>
+    f2()
+  File "test.py", line 17, in f2
+    print(a)
+NameError: name 'a' is not defined
+
+
+global key word:
+----------------
+we can make it local varaiable to global varaiable
+eg:
+x=200
+y=400
+def f1():
+    global a
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+def f2():
+    c=1000
+    d=2000
+    print(c)
+    print(d)
+    print(x)
+    print(y)
+    print(a)
+f1()
+f2()
+
+output:
+100
+20
+200
+400
+1000
+2000
+200
+400
+100
+
+eg:
+x=200
+y=400
+def f1():
+    global a
+    a=100
+    b=20
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+def f2():
+    
+    c=1000
+    d=2000
+    print(c)
+    print(d)
+    print(x)
+    print(y)
+    print(a)
+
+f2()
+f1()
+
+output:
+1000
+2000
+200
+400
+Traceback (most recent call last):
+  File "test.py", line 21, in <module>
+    f2()
+  File "test.py", line 19, in f2
+    print(a)
+NameError: name 'a' is not defined
+
+Anonymous functions or lambda functions:
+----------------------------------------
+1.The function don't have name
+2.We can use function only one time
+
+eg:
+def squre(n):
+    return n*n
+print(squre(4))
+print(squre(5))
+print(squre(6))
+output:
+16
+25
+36
+
+lambda function:
+----------------
+d= lambda n: n*n
+
+eg:
+d=lambda n:n*n
+print(d(4))
+print(d(5))
+print(d(6))
+
+output:
+16
+25
+36
+eg:
+d=lambda a,b:a+b
+print(d(10,20))
+
+output:
+30
+
+eg:
+d=lambda a,b: a if a>b else b
+print(d(2,3))
+print(d(50,20))
+
+output:
+3
+50
+
+The function as argument to the another function 
+
+1.filter(function,sequence)
+2.map(function,sequence)
+3.reduce(function,sequence)
+
+1.filter(function,sequence):
+------------------------------
+eg:
+def even(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+
+l=[1,2,3,4,5,6,7,8,9]
+l1=[]
+for n in l:
+    if even(n) :
+        l1.append(n)
+print(l1)
+
+output:
+[2, 4, 6, 8]
+
+eg:
+def even(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+
+l=[1,2,3,4,5,6,7,8,9]
+l1=filter(even,l)
+print(l1)
+print(list(l1))
+
+output:
+<filter object at 0x0000023A70DDEAC8>
+[2, 4, 6, 8]
+
+eg:
+l= lambda n:n%2==0
+print(l(2))
+print(l(5))
+
+output:
+True
+False
+
+eg:
+l= filter(lambda n:n%2==0,[1,2,3,4,5,6,7,8,9])
+print(l)
+print(list(l))
+
+output:
+<filter object at 0x0000021336FEE7F0>
+[2, 4, 6, 8]
+
+
+
+Assigmnent:
+----------
+input: ["Ant","Bat","Dog","apple","Axe","air"]
+output:["Ant","apple","Axe","air"]
+
+eg:
+print(list(filter(lambda name:name[0].upper()=="A",["Ant","Bat","Dog","apple","Axe","air"])))
+
+
+2.map(function,sequence)
+-------------------------
+eg:
+def squre_no(n):
+    return n*n
+
+l=[1,2,3,4,5,6]
+l1=[]
+for n in l:
+    l1.append(squre_no(n))
+print(l1)
+
+output:
+[1, 4, 9, 16, 25, 36]
+
+eg:
+def squre_no(n):
+    return n*n
+l1=map(squre_no,[1,2,3,4,5,6])
+print(l1)
+print(list(l1))
+
+output:
+<map object at 0x000001CB7170E7F0>
+[1, 4, 9, 16, 25, 36]
+
+eg:
+l1= map(lambda n:n*n,[1,2,3,4,5,6])
+print(l1)
+print(list(l1))
+
+output:
+<map object at 0x000001D3664AE7F0>
+[1, 4, 9, 16, 25, 36]
+eg:
+print(list(map(lambda n:n*n,[1,2,3,4,5,6])))
+output:
+[1, 4, 9, 16, 25, 36]
+
+eg:
+l1=[1,2,3,4,5]
+l2=[10,20,30,40,50]
+l3= map(lambda x,y:x*y ,l1,l2)
+print(l3)
+print(list(l3))
+
+output:
+<map object at 0x000002331C6FEAC8>
+[10, 40, 90, 160, 250]
+
+eg:
+print(list(map(lambda x,y:x*y ,[1,2,3,4,5],[10,20,30,40,50])))
+
+output:
+[10, 40, 90, 160, 250]
+
+3.reduce(function,sequence):
+-----------------------------
+eg:
+r= reduce(lambda x,y:x+y,[1,2,3,4,5])
+print(r)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    r= reduce(lambda x,y:x+y,[1,2,3,4,5])
+NameError: name 'reduce' is not defined
+
+eg:
+from functools import *
+r= reduce(lambda x,y:x+y,[1,2,3,4,5])
+print(r)
+
+#x,y=x+y
+#1,2=1+2=3------>x=3
+#x=3,y=3------->3+3=6----------->x=6
+#x=6,y=4 ------->6+4=10--------->x=10
+#x=10,y=5 ------->10+5=15 ------->x=15
+
+output:
+15
+
+
+OOPs:
+-----
+1.class
+2.object
+3.Reference varaiable
+
+1.class:
+--------
+class is blue print or plan or model or design to create objects.
+class represents properties and actions of object
+
+2.object:
+---------
+Physical existance of class is nothing but object or physical instance of class is nothing but
+object.
+3.Reference varaiable:
+----------------------
+The varaiable which is used to reffer an object is called Reference varaiable.
+By useing reffernce varaiable we can access properties (varaiables) and actions (methods) of object.
+
+syntax:
+------
+
+class Class_Name:
+	"Doc string"
+	varaiables
+	methods
+eg:
+class Student:
+    "This is the class developed for student attandance"
+    #variables
+    #methods
+
+print(Student.__doc__)
+
+output:
+
+This is the class developed for student attandance
+
+eg:
+class Student:
+    "This is the class developed for student attandance"
+    #variables
+    #methods
+
+print(help(Student))
+
+output:
+Help on class Student in module __main__:
+
+class Student(builtins.object)
+ |  This is the class developed for student attandance
+ |
+ |  Data descriptors defined here:
+ |
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+
+None
+
+Inside python class three types of varaiables are allowed
+
+1.Instance varaiables (Object level varaiables)
+2.Static varaiables (class level varaiables)
+3.Local varaiables(method level varaiables)
+
+
+Inside python class three types of methods are allowed
+1.Instance method
+2.class method
+3.static method
+
+
+
+eg:
+class Student:
+    "This the student class"
+    def __init__ (self):
+        self.name="Jagan"
+        self.rollno=222
+        self.marks=70
+s1=Student()
+
+print(s1.name)
+print(s1.rollno)
+print(s1.marks)
+
+output:
+Jagan
+222
+70
+
+eg:
+class Student:
+    "This the student class"
+    def __init__ (self):
+        self.name="Jagan"
+        self.rollno=222
+        self.marks=70
+    def info(self):
+        print("Name:",self.name)
+        print("Rollno:",self.rollno)
+        print("Marks:",self.marks)   
+s1=Student()
+s1.info()
+print(s1.name)
+print(s1.rollno)
+print(s1.marks)
+output:
+Name: Jagan
+Rollno: 222
+Marks: 70
+Jagan
+222
+70
+eg:
+class Student:
+    def __init__ (self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+    def info (self):
+        print("Name:",self.name)
+        print("Rollno",self.rollno)
+        print("Marks:",self.marks)
+        
+s1=Student("Jagan",222,70)
+s2=Student("Ram",100,80)
+s3=Student("Raj",200,90)
+
+print(s1.name)
+print(s1.rollno)
+print(s1.marks)
+
+print(s2.name)
+print(s2.rollno)
+print(s2.marks)
+
+print(s3.name)
+print(s3.rollno)
+print(s3.marks)
+
+s1.info()
+s2.info()
+s3.info()
+
+output:
+Jagan
+222
+70
+Ram
+100
+80
+Raj
+200
+90
+Name: Jagan
+Rollno 222
+Marks: 70
+Name: Ram
+Rollno 100
+Marks: 80
+Name: Raj
+Rollno 200
+Marks: 90
+
+
+About self:
+-----------
+self is references varaiable which is pointing to current object 
+eg:
+class Test:
+    def __init__ (self):
+        pass
+
+t=Test()
+
+t is references varaiable which is pointing to current object
+
+
+self is also a references varaiable which is pointing current object inside the class
+
+eg:
+class Test:
+    def __init__ (self):
+        print("Address of object pointed by self",id(self))
+
+t=Test()
+print("Address of object pointed by t",id(t))
+
+output:
+Address of object pointed by self 2801659471856
+Address of object pointed by t 2801659471856
+
+eg:
+class Test:
+    def __init__ (self):
+        print("Address of object pointed by self",id(self))
+
+t1=Test()
+print("Address of object pointed by t1",id(t1))
+
+t2=Test()
+print("Address of object pointed by t2",id(t2))
+
+t3=Test()
+print("Address of object pointed by t3",id(t3))
+
+output:
+Address of object pointed by self 2393938324392
+Address of object pointed by t1 2393938324392
+Address of object pointed by self 2393938324504
+Address of object pointed by t2 2393938324504
+Address of object pointed by self 2393938324560
+Address of object pointed by t3 2393938324560
+
+self is first argument inside constructor and instance method
+We no need to pass value for self argument in constructor and instance method
+
+
+self is not key word it is a varaiable. Instead of self we can take any name
+
+
+eg:
+class Test:
+    def __init__ (xyz):
+        xyz.name="Jagan"
+        xyz.marks=70
+    def info(xyz):
+        print("Name ",xyz.name)
+        print("Marks:",xyz.marks)
+t1=Test()
+print(t1.name)
+print(t1.marks)
+t1.info()
+
+output:
+Jagan
+70
+Name  Jagan
+Marks: 70
+
+constructor:
+-----------
+It is special method in python
+The constructor name is always fixed i.e __init__
+When ever creating object constructor will exicuted
+For each object constructor will exicuted only once	
+Eg:
+class Test:
+    def __init__ (self):
+        print("Constructor")
+t1=Test()
+t2=Test()
+t3=Test()
+t4=Test()
+t5=Test()
+
+output:
+Constructor
+Constructor
+Constructor
+Constructor
+Constructor
+
+The main purpose of constructor is to declare and intilize instance varaiables
+
+eg:
+class Test:
+    def __init__ (self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+t1=Test("Jagan",222,70)
+t2=Test("Ram",100,80)
+t3=Test("Raj",200,90)
+
+print(t1.name,t2.rollno,t1.marks)
+print(t2.name,t2.rollno,t2.marks)
+print(t3.name,t3.rollno,t3.marks)
+
+
+output:
+Jagan 100 70
+Ram 100 80
+Raj 200 90
+
+constructor is optional
+
+we didn't write constructor to our code python will exicuted default constructor
+eg:
+class Test:
+    def m1(self):
+        print("Method1")
+t=Test()
+t.m1()
+
+output:
+Method1
+eg:
+class Test:
+    def __init__ (self):
+        print("Constrtor")
+t=Test()
+t.__init__()
+output:
+Constrtor
+Constrtor
+
+We can take more than one constructor to our python code but it will exicute only one constructor 
+i.e latest constructor only
+
+eg:
+class Test:
+    def __init__ (self):
+        print("Constrtor1")
+    def __init__ (self):
+        print("Constrtor2")
+    def __init__ (self):
+        print("Constrtor3")
+
+t=Test()
+
+output:
+
+Constrtor3
+
+
+eg:
+class   States:
+    def __init__(self,sname,scapital):
+        self.sname=sname
+        self.scapital=scapital
+    def info(self):
+        print("State Name:",self.sname)
+        print("Capital Name:",self.scapital)
+list_of_states=[]
+while True:
+    sname=input("Enter State Name:")
+    scapital=input("Enter Capital Name:")
+    s=States(sname,scapital)
+    list_of_states.append(s)
+    print("State information saved sucessfully")
+    option=input("Do you want enter one more state:[Yes/No]")
+    if option.lower()=="no":
+        break
+
+print(list_of_states)
+for state in list_of_states:
+    state.info()
+    print()
+
+output:
+Enter State Name:AP
+Enter Capital Name:Amarvathi
+State information saved sucessfully
+Do you want enter one more state:[Yes/No]yes
+Enter State Name:KA
+Enter Capital Name:Beng
+State information saved sucessfully
+Do you want enter one more state:[Yes/No]yes
+Enter State Name:TS
+Enter Capital Name:HYd
+State information saved sucessfully
+Do you want enter one more state:[Yes/No]yes
+Enter State Name:TN
+Enter Capital Name:Chen
+State information saved sucessfully
+Do you want enter one more state:[Yes/No]yes
+Enter State Name:KL
+Enter Capital Name:Tiruantahpur
+State information saved sucessfully
+Do you want enter one more state:[Yes/No]no
+[<__main__.States object at 0x0000021C9027EB38>, <__main__.States object at 0x0000021C9027EBE0>, <__main__.States object at 0x0000021C9027EC18>, <__main__.States object at 0x0000021C9027ECF8>, <__main__.States object at 0x0000021C9027EDA0>]
+State Name: AP
+Capital Name: Amarvathi
+
+State Name: KA
+Capital Name: Beng
+
+State Name: TS
+Capital Name: HYd
+
+State Name: TN
+Capital Name: Chen
+
+State Name: KL
+Capital Name: Tiruantahpur
+
+
+Inside python class three types of varaiables are allowed
+
+1.Instance varaiables (Object level varaiables)
+2.Static varaiables (class level varaiables)
+3.Local varaiables(method level variables)
+
+1.Instance varaiables (Object level varaiables):
+-------------------------------------------------
+
+The varaiable which are varied from object to object are known as Instance varaiables
+Eg:
+	
+	name,rollno,marks
+Every object haveing a separate instance varaiables
+Declare the instance variables inside constructor or inside instance method
+
+eg:
+class Student:
+    def __init__ (self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+    def info(self):
+        self.grade="A"
+        
+2.Static varaiables (class level varaiables):
+----------------------------------------------
+The varaiables which are same for every object or the varaiable which are not changed from object to object
+such type of varaiable are known static varaiables.
+Eg:
+class Student:
+    school_name="ABCD School"
+    def __init__ (self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+        print(self.school_name)
+        print(Student.school_name)
+    def info(self):
+        self.grade="A"
+s1=Student("Jagan",222,70)
+s2=Student("Ram",100,90)      
+
+output:
+ABCD School
+ABCD School
+ABCD School
+ABCD School
+
+
+ef:
+class Student:
+    school_name="ABCD School"
+    def __init__ (self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+        
+       
+    def info(self):
+        print("Name:",self.name)
+        print("Rollno:",self.rollno)
+        print("Marks:",self.marks)
+        print("School Name:",self.school_name)
+        
+s1=Student("Jagan",222,70,"ABCD School")
+s2=Student("Ram",100,90,"ABCD School")      
+s1.info()
+s2.info()
+
+3.Local varaiables(method level variables):
+--------------------------------------------
+The variables which are used to meet temprry requirements such type of varaiables are known as local 
+varaiables
+
+eg:
+class Student:
+    def info(self):
+        x=10
+        for i in range(x):
+            print(i)
+s1=Student()
+s1.info()
+
+output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Inside python class three types of methods are allowed
+1.Instance method
+2.class method
+3.static method
+
+1.Instance method:
+------------------
+
+Inside instance method we are accessing instance varaiables and the method allways talks about
+perticular object only.Such cases we can go for instance method.
+
+The first argument to the instance method is self only..self is references varaiable which is
+always pointing current object.
+
+eg:
+
+class Test:
+	def m1(self):
+		self.name="jagan"
+		print(self.name)
+2.class method:
+---------------
+Inside method we can access the only class level varaiables or static varaiables  we 
+can go for class method.
+The class method declared using @classmethod decarator.
+The first argument inside class method is cls  . cls is varaiable
+Eg:
+class Test:
+	school_name="ABCD School"
+	@classmethod
+	def m2(cls):
+		print("Schoo Name:",cls.school_name)
+eg:
+class Test:
+    school_name="ABCD School"
+    @classmethod
+    def m1(cls):
+        print(id(cls))
+        print("Name:",cls.school_name)
+t1=Test()
+t1.m1()
+Test.m1()
+print(id(Test))
+
+output:
+2762367796056
+Name: ABCD School
+2762367796056
+Name: ABCD School
+2762367796056
+
+3.static method:
+-----------------
+Inside static method if not using any object level or class level information we can go for
+static method
+
+static method decalred using @staticmethod decarator
+Eg:
+class Test:
+    @staticmethod
+    def sum(a,b):
+        return a+b
+
+t1=Test()
+print(t1.sum(5,6))
+
+output:
+11
+eg:
+class Student:
+    school_name="ABCD School"
+    def __init__ (self,name,marks):
+        self.name=name
+        self.marks=marks
+    def getinfo(self):
+        print("Name:",self.name)
+        print("Marks:",self.marks)
+    @classmethod
+    def get_school(cls):
+        print("School Name:",cls.school_name)
+    @staticmethod
+    def sum(a,b):
+        return a+b
+
+s1=Student("Jagan",70)
+s1.getinfo()
+s1.get_school()
+print(s1.sum(10,20))
+
+output:
+Name: Jagan
+Marks: 70
+School Name: ABCD School
+30
+eg:
+class Bank:
+    "Deposit and Withdraw Application"
+    bank_name="ABCD BANK"
+    def __init__ (self,name,balance=0.0):
+        self.name=name
+        self.balance=balance
+    def deposit(self,ammount):
+        self.balance=self.balance+ammount
+        print("After Deposit Ammount:",self.balance)
+    def withdraw(self,ammount):
+        if ammount>self.balance:
+            print("Insuffient balance")
+        else:
+            self.balance=self.balance-ammount
+            print("After Withdraw Ammount:",self.balance)
+            
+print("Welcome to",Bank.bank_name)
+name=input("Enter your Name:")
+b=Bank(name)
+while True:
+    print("""D - Deposit
+            W  - Withdraw
+            E   - Exit  """)
+    option=input("Enter option:")
+    if option.lower()=='d':
+        ammount=float(input("Enter ammount to deposit:"))
+        b.deposit(ammount)
+    elif option.lower()=="w":
+        ammount=float(input("Enter ammount to withdraw:"))
+        b.withdraw(ammount)
+    elif option.lower()=='e':
+        print("Thanks for Banking!")
+        break
+    else:
+        print("Enter option is invalid")
+        
+            
+output:
+Welcome to ABCD BANK
+Enter your Name:"Jagan"
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:D
+Enter ammount to deposit:1000
+After Deposit Ammount: 1000.0
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:D
+Enter ammount to deposit:475
+After Deposit Ammount: 1475.0
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:W
+Enter ammount to withdraw:15
+After Withdraw Ammount: 1460.0
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:W
+Enter ammount to withdraw:1000
+After Withdraw Ammount: 460.0
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:D
+Enter ammount to deposit:40
+After Deposit Ammount: 500.0
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:W
+Enter ammount to withdraw:1000
+Insuffient balance
+D - Deposit
+            W  - Withdraw
+            E   - Exit
+Enter option:E
+Thanks for Banking!       
+
+Garbage collector:
+-------------------
+If the object doesnot having any reffernce varaiables such type of objects deleted by GC
+Eg:
+import gc
+print(gc.isenabled())
+gc.disable()
+print(gc.isenabled())
+gc.enable()
+print(gc.isenabled())
+
+output:
+True
+False
+True
+
+Destructor:
+----------
+Destructor is special method and name of destrutor is __del__()
+
+Just before destroying object Garbage collector call the destrutor to perform some
+cleanup activities.
+Once destrutor execution is completed gc will destroying object.
+
+eg:
+class Test:
+    def __init__(self):
+        print("Object Creation")
+        
+    def __del__ (self):
+        print("Clean up activities")
+        
+t=Test()
+t=None
+
+output:
+Object Creation
+Clean up activities
+eg:
+class Test:
+    def __init__(self):
+        print("Object Creation")
+        
+    def __del__ (self):
+        print("Clean up activities")
+        
+t1=Test()
+t2=Test()
+
+output:
+Object Creation
+Object Creation
+Clean up activities
+Clean up activities
+eg:
+class Test:
+    def __init__(self):
+        print("Object Creation")
+        
+    def __del__ (self):
+        print("Clean up activities")
+        
+l=[Test(),Test(),Test(),Test(),Test()]
+
+output:
+Object Creation
+Object Creation
+Object Creation
+Object Creation
+Object Creation
+Clean up activities
+Clean up activities
+Clean up activities
+Clean up activities
+Clean up activities            
+
+Inhertance:
+----------
+The concept of inherting members from one class to another class is known as inherance
+
+Advantage:
+-----------
+1.There is no code duplicate
+2.Length of the code will decreses
+3.Performance improved
+
+Types of inhertance are:
+------------------------
+1.single inheratance
+2.multi level inhertance
+3.Hireachial inhertance
+4.multiple inhertance
+5.Hybrid inheratance
+6.cyclic inhertance
+
+
+1.single inheratance:
+----------------------
+The concept of inherting members from one class to another class is known as single  inherance
+
+in single inhertance only one parent and one child class
+
+eg:
+class P:
+    def m1(self):
+        print("House+Land+Car")
+class C:
+    def m2(self):
+        print("Bike")
+
+c=C()
+c.m2()
+c.m1()
+
+output:
+Bike
+Traceback (most recent call last):
+  File "test.py", line 10, in <module>
+    c.m1()
+AttributeError: 'C' object has no attribute 'm1'
+
+eg:
+class P:
+    def m1(self):
+        print("House+Land+Car")
+class C(P):
+    def m2(self):
+        print("Bike")
+
+c=C()
+c.m2()
+c.m1()
+
+output:
+Bike
+House+Land+Car
+eg:
+class P:
+    def m1(self):
+        print("House+Land+Car")
+class C(P):
+    def m2(self):
+        print("Bike")
+
+c=C()
+c.m2()
+c.m1()
+
+p=P()
+p.m1()
+p.m2()
+
+output:
+Bike
+House+Land+Car
+House+Land+Car
+Traceback (most recent call last):
+  File "test.py", line 14, in <module>
+    p.m2()
+AttributeError: 'P' object has no attribute 'm2'
+
+2.multi level inhertance:
+------------------------
+The concept of inherting members from mutiple classes to single class is known as multi level
+inhertance.
+eg:
+class GP:
+    def m1(self):
+        print("House+Land")
+class P:
+    def m2(self):
+        print("Car+Shop")
+class C(P):
+    def m3(self):
+        print("Bicycle")
+c=C()
+c.m3()
+c.m2()
+c.m1()
+
+output:
+Bicycle
+Car+Shop
+Traceback (most recent call last):
+  File "test.py", line 13, in <module>
+    c.m1()
+AttributeError: 'C' object has no attribute 'm1'
+
+eg:
+class GP:
+    def m1(self):
+        print("House+Land")
+class P(GP):
+    def m2(self):
+        print("Car+Shop")
+class C(P):
+    def m3(self):
+        print("Bicycle")
+c=C()
+c.m3()
+c.m2()
+c.m1()
+
+output:
+Bicycle
+Car+Shop
+House+Land
+
+3.Hireachial inhertance:
+---------------------
+The concept of inherting members from one class to mutliple classes which are present at
+same level is known as "Hireachial Inhertance"
+
+eg:
+class P:
+    def m1(self):
+        print("Parent class m1 method")
+class C1(P):
+    def m2(self):
+        print("C1  m2  method")
+class C2(P):
+    def m3(self):
+        print("C2 m3 method")
+c1=C1()
+c2=C2()
+c1.m2()
+c1.m1()
+c2.m3()
+c2.m1()
+output:
+C1  m2  method
+Parent class m1 method
+C2 m3 method
+Parent class m1 method
+
+4.multiple inhertance:
+----------------------
+It is reverse of Hireachial inheratance
+The concept of inherting members from multiple classes to single class is known as
+multiple inhertance
+class P1:
+    def m1(self):
+        print("P1 M1 method")
+class P2:
+    def m2(self):
+        print("P2 M2 method")
+class C(P1,P2):
+    def m3(self):
+        print("C m3 method")
+c=C()
+c.m3()
+c.m2()
+c.m1()
+
+output:
+C m3 method
+P2 M2 method
+P1 M1 method
+5.Hybrid inheratance:
+-----------------------
+Hybrid inheratance is combination of single , multilevel and Hireachial inhertance
+
+Note:
+In Hybrid inhertance method searching based on MRO(Method Resolution Order) algorithum
+6.cyclic inhertance:
+--------------------
+The concept of inherting members from one class to another class in cyclic way is known as
+cyclic inhertance.
+Note:
+	cyclic inhertance doesn't support python.
+eg:
+class A(B):
+    pass
+class B(A):
+    pass
+b=B()
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    class A(B):
+NameError: name 'B' is not defined
+
+
+super():
+---------
+Eg:
+class P:
+    def m1 (self):
+        print("P m1")
+class C(P):
+    def m2 (self):
+        print("C m2")
+c=C()
+c.m2()
+c.m1()
+
+output:
+C m2
+P m1
+eg:
+class P:
+    def m1 (self):
+        print("P m1")
+class C(P):
+    def m1 (self):
+        print("C m1")
+c=C()
+c.m1()
+c.m1()
+
+output:
+C m1
+C m1
+eg:
+class P:
+    def m1 (self):
+        print("P m1")
+class C(P):
+    def m2 (self):
+        self.m1()
+c=C()
+c.m2()
+
+output:
+P m1
+
+eg:
+class P:
+    def m1 (self):
+        print("P m1")
+class C(P):
+    def m1 (self):
+        self.m1()
+c=C()
+c.m1()
+
+output;
+Traceback (most recent call last):
+  File "test.py", line 8, in <module>
+    c.m1()
+  File "test.py", line 6, in m1
+    self.m1()
+  File "test.py", line 6, in m1
+    self.m1()
+  File "test.py", line 6, in m1
+    self.m1()
+  [Previous line repeated 995 more times]
+RecursionError: maximum recursion depth exceeded
+
+eg:
+class P:
+    def m1 (self):
+        print("P m1")
+class C(P):
+    def m1 (self):
+        super().m1()
+        print("c m1")
+c=C()
+c.m1()
+
+output:
+P m1
+c m1
+
+
+assignment:
+class A:
+         def   __init___
+               Claass A const
+
+class B(A):
+         def   __init___
+                classs B cons
+
+
+b=B()
+b=B()
+
+eg:
+class P:
+    def __init__ (self):
+        print("P constructor")
+class C(P):
+    def __init__(self):
+        super().__init__()
+        print("C Constructor")
+c=C()
+
+output:
+P constructor
+C Constructor
+eg:
+class P1:
+    def __init__ (self):
+        super().__init__()
+        print("P1 constructor")
+class P2:
+    def __init__ (self):
+        print("P2 constructor")
+class C(P1,P2):
+    def __init__(self):
+        super().__init__()
+        print("C Constructor")
+c=C()
+
+output:
+P2 constructor
+P1 constructor
+C Constructor
+
+Polymorphism:
+--------------
+Poly means many and morphs means forms
+
+polymorphism is nothing but many forms
+
+
+operator overloading:
+---------------------
++ operator:
+-------------
+eg:
+a=10
+b=20
+print(a+b)
+c="Hello"
+d="World"
+print(c+d)
+
+output:
+30
+HelloWorld
+* operator:
+----------
+eg:
+a=10
+b=20
+print(a*b)
+c=2
+d="ABCD"
+print(c*d)
+
+output:
+200
+ABCDABCD
+
+
+method overriding:
+------------------
+eg:
+class Book:
+    def __init__(self,pages):
+        self.pages=pages
+b1=Book(100)
+b2=Book(200)
+print(b1+b2)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 6, in <module>
+    print(b1+b2)
+TypeError: unsupported operand type(s) for +: 'Book' and 'Book'
+		
+Magical methods:
+-----------------
+Every operator internally having one magical method, when operator exicuted internally
+coresponding magical method is also executed.
+
+
+For + operator magical method is __add__()
+For - operator magical method is __sub__()
+eg:
+class Book:
+    def __init__(self,pages):
+        self.pages=pages
+    def __add__(self,other):
+        totalpages=self.pages+other.pages
+        return totalpages
+b1=Book(100)
+b2=Book(200)
+print(b1+b2)
+output:
+300
+eg:
+class Book:
+    def __init__(self,pages):
+        self.pages=pages
+    def __sub__(self,other):
+        difference=self.pages-other.pages
+        return difference
+        
+b1=Book(100)
+b2=Book(200)
+print(b1-b2)
+
+output:
+-100
+
+magical methods :
+----------------
++  ----------> __add__(self,other)
+- ----------> __sub__(self,other)
+*  ----------> __mul__(self,other)
+/  ----------> __div__(self,other)
+//  ----------> __floordiv__(self,other)
+%  ----------> __mod__(self,other)
+**  ----------> __pow__(self,other)
+< ----------> __lt__(self,other)
+<=  ----------> __le__(self,other)
+> ----------> __gt__(self,other)
+>=  ----------> __ge__(self,other)
+==  ----------> __eq__(self,other)
+!= ----------> __ne__(self,other)
+
+eg:
+class Student:
+    def __init__(self,name,marks):
+            self.name=name
+            self.marks=marks
+    def __gt__(self,other):
+        return self.marks > other.marks
+    def __lt__(self,other):
+        return self.marks < other.marks
+  
+s1=Student("jagan",80)       
+s2=Student("Mohan",90)     
+print(s1>s2)
+print(s1<s2)
+
+output:
+False
+True
+
+Method overloading:
+-------------------
+Method over loading nothing but same method name with multiple number of arguments.
+Note: Method over loading not supported in python.
+eg:
+class Test:
+    def m1(self):
+        print("No args method")
+    def m1(self,x):
+        print("One args method")
+    def m1(self,x,Y):
+        print("Two args method")
+t=Test()
+t.m1(1)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 9, in <module>
+    t.m1(1)
+TypeError: m1() missing 1 required positional argument: 'Y'
+
+eg:
+class Test:
+    def m1(self):
+        print("No args method")
+    def m1(self,x):
+        print("One args method")
+    def m1(self,x,Y):
+        print("Two args method")
+t=Test()
+t.m1(1,2)
+
+output:
+Two args method
+
+eg:
+class Test:
+    def total(self,*args):
+        print(args)
+        total=0
+        for x in args:
+            total=total+x
+        print("Total:",total)
+t=Test()
+t.total()
+t.total(1)
+t.total(1,2,3,4,5)
+output:
+()
+Total: 0
+(1,)
+Total: 1
+(1, 2, 3, 4, 5)
+Total: 15
+
+over riding:
+-------------
+What ever methods present in parent class are by default available to child class through
+inhertance.
+Some times child class may not satisfy with the parent class methods then child class is 
+allowed to define their own methods.
+eg:
+class P:
+    def property(self):
+        print("Land+Cash")
+    def vehicle(self):
+        print("Tvs")
+class C(P):
+    pass
+    
+c=C()
+c.property()
+c.vehicle()
+
+output:
+Land+Cash
+Tvs
+
+eg:
+class P:
+    def property(self):
+        print("Land+Cash")
+    def vehicle(self):
+        print("Tvs")
+class C(P):
+    def vehicle(self):
+        print("Royal Enfileld Bike")
+        
+    
+c=C()
+c.property()
+c.vehicle()
+
+output:
+Land+Cash
+Royal Enfileld Bike
+eg:
+class P:
+    def __init__(self):
+        print("P constructor")
+class C(P):
+    pass
+c=C()
+output:
+P constructor
+
+eg:
+class P:
+    def __init__(self):
+        print("P constructor")
+class C(P):
+   def __init__(self):
+    print("C Contstructor")
+c=C()
+output:
+C Contstructor
+
+Data hiding:
+-----------
+Outside person can't access our interna data directly and data n't go out side directly.
+
+eg:
+class Account:
+    def __init__(self,balance):
+        self.balance=balance
+a=Account(1000)
+print(a.balance)
+
+output:
+1000
+
+eg:
+class Account:
+    def __init__(self,balance):
+        self.__balance=balance
+a=Account(1000)
+print(a.__balance)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    print(a.__balance)
+AttributeError: 'Account' object has no attribute '__balance'
+
+eg:
+class Account:
+    def __init__(self,balance):
+        self.__balance=balance
+    def getbalance(self):
+		#validating
+        return self.__balance
+a=Account(1000)
+print(a.getbalance())
+output:
+1000
+
+Encapuslation:
+--------------
+Encapuslation=Data hiding + Abstratction
+
+
+Three pillars of oops:
+---------------------
+1.Inhertance ---------------- code reusablity
+2.Polymorphism-----------------Flexiblity
+3.Encapuslation----------------security.
+
+
+Exception Handling:
+-------------------
+In any programming language two types of errors are possible
+1.syntax error
+2.Runtime error or logical error
+
+1.synatx error:
+--------------
+if doing any mistake at coding level such type of error are known as synatx errors
+eg:
+x=10
+if x==10
+    print(x)
+output:
+  File "test.py", line 2
+    if x==10
+           ^
+SyntaxError: invalid syntax
+
+programer is responsible to correct these syntax errors.
+
+2.Runtime error or logical error:
+-----------------------------------
+Exception handling concept talks about Runtime errors.
+If exeiguiting a program something goes wrong because of end user input or programing 
+logical or memory errors e.t.c .This type of situations error raised.These errors are known as
+Runtime errors or exceptions.
+eg:
+print(10/0)
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    print(10/0)
+ZeroDivisionError: division by zero
+eg:
+print(10/"ten")
+
+output:
+Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    print(10/"ten")
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+what is exception:
+---------------------
+while exicuting the program something goes wrong which is distrub the normal flow of the program is nothing but exception.
+
+eg:
+ ZeroDivisionError
+ TypeError
+ ValueError
+ FileNotfoundError
+what is need of exception handling:
+-----------------------------------
+Need of exception handling is normal or gracefull termination of the program
+
+what is the meaning exceptional handling:
+--------------------------------------------
+It means that defining alternative way to continue the rest of the program normally.

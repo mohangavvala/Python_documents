@@ -1,0 +1,42 @@
+Python Programing:
+-------------------
+Core Python:
+------------
+	->Introduction
+	->Identifiers
+	->Data Types
+	->Type casting
+	->Immutable
+	->input  and output
+	->if elif else
+	->break continue
+	->loops
+	->functions
+	->Anonymus functions or lambda functions
+	->modules
+Advanced Python:
+---------------
+	->oops
+	->Exception handling
+Linux OS
+--------
+	->Basic commands
+	->Navigation Commands
+	->Create dir
+	->Create Files
+
+GIT
+----
+	-> Commands to move file from local repo to remote repo
+
+API testing:
+-----------
+	->Rest API   
+	->Rest API Postman tool
+Selenium:
+--------
+	-Basic concepts of HTML and css
+	->Finding elelments 
+	->Automate elements 
+
+
